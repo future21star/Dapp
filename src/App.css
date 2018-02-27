@@ -1,0 +1,995 @@
+body{font-family: 'Roboto';margin:0;padding:0;}
+
+
+a, a:hover {text-decoration: none;}
+a:focus {outline: 0;outline-offset: 0;text-decoration: none;}
+
+.custom_menu:after, .left_site:after, .sign_right ul:After , .left_site:after , .innner_content:after, .innner_content:after, .home_global_head:after, .section_progress:after, .listing_p ul:After, .select_data:After, .bottom_panel:after, .liquid_box_content:after, .buy_sell_info:After, .order_detail_crm:After, .join_div:after, .fa_content:After, .ul_data_client:After, .property_sale:After, .up_popup_btn:After, .upload_img_custom:After, .three_row:after, .pick_data:After, .notice_custom_btn:After, .content_property:After, .p_three_col:After, .btn_flow:after, .warning_prp_msg:After, .portfolio_head:After, .portfolio_box:After, .portfolio_box ul, .info_value:After, .head_tab_content:After, .panel_ireos:After, .li_offer_data_content:After, .offer_d:After, .inner_inner_detail:After, .date_show:After, .listing_share:After, .ul_list_wrapper:After,.ul_graph_detail:After, .video_content_row:After, .doc_content:after, .doc_content:After  , .gallery_slider .flex-control-thumbs:After, .input_page_change:After, .col_custom_half:After, .info_first:After, .form_custom:After, .add_pic_wrapper:after, .slider_cstm:After, .ul_slider_content ul:After, .current_c_add:After, .input_2_row:After, .tab_mkt_share .tab_head:After {content: " ";display: block;clear: both;}
+
+
+
+/*** header css ***/
+.custom_menu {position: relative;padding-left: 160px;}
+.logo {position: absolute;top: 0;left: 0;}
+.logo .a_logo {display: inline-block;padding: 0;line-height: 34px;vertical-align: middle;position: relative;}
+.left_site {float: left;}
+.ul_menu {margin: 0;padding: 0;list-style: none;}
+.ul_menu li {float: left;}
+.ul_menu li a {color: #FFFFFF;font-family: Roboto;font-size: 16px;font-weight: 500;line-height: 19px;padding: 8px 18px;display: inline-block;}
+.ul_menu li:first-child a {padding-left: 0;}
+.ul_menu li:last-child a {padding-right: 0;}
+.sign_right {float: right;}
+.sign_right ul {padding: 0;margin: 0;list-style: none;}
+.sign_right ul li {float: left;}
+.sign_right ul li:First-child a {padding-left: 0;}
+.sign_right ul li a {color: #FFFFFF;font-family: Roboto;font-size: 16px;font-weight: 500;line-height: 19px;display: inline-block;padding: 8px 18px;}
+.sign_right ul li a.sign_btn {border-radius: 4px;background-color: #FFFFFF;color: #1875F0;font-family: Roboto;font-size: 16px;font-weight: 500;line-height: 19px;display: inline-block;padding: 8px 18px;}
+.custom_header {background-color: #1875F0;padding: 12px 0;}
+.logo .a_logo span {display: inline-block;vertical-align: middle;line-height: 100%;position: relative;top: 2px;}
+.custom_header.liquidre_backend_header.liquidre_front_header .custom_menu {padding-left: 160px;}
+.custom_header.liquidre_backend_header.liquidre_front_header .sign_right ul li:last-child a {padding-right: 18px;}
+.custom_header.dexre_header .logo .a_logo {top: -9px;}
+.custom_header.dexre_header .logo .a_logo span img {width: 100px;height: 48px;}
+
+/** LiquidRe–US-Investors and backend header ***/
+.form_search_header input {border: 0;padding: 0;background: transparent;color: #fff;box-shadow: none;height: auto;width: auto;opacity: 0.5;color: #FFFFFF;font-family: Roboto;font-size: 16px;font-weight: 400;line-height: 24px;}
+.form_search_header input:focus {border: 0;outline: 0;border-bottom: 2px solid #fff;opacity: 1;}
+.form_search_header span svg {height: 15px;width: 15px;fill: #fff;}
+.custom_header.liquidre_backend_header .custom_menu {padding: 0;}
+.form_search_header input::-webkit-input-placeholder {color: #fff;}
+.form_search_header input::-moz-placeholder {color: #fff;}
+.form_search_header input:-ms-input-placeholder {color: #fff;}
+.form_search_header input:-moz-placeholder {color: #fff;}
+.form_search_header {padding: 5px 0 0 24px;}
+.form_search_header span {display: inline-block;vertical-align: middle;margin-right: 10px;position: relative;top: 1px;}
+.liquidre_backend_header .logo .a_logo {padding: 3px 32px 0px 32px;}
+.liquidre_backend_header .logo {position: absolute;top: 0;left: 0;width: 250px;min-height: 59px;background-color: #257EF3;}
+.liquidre_backend_header .container {width: 100%;padding-left: 250px;padding-right: 250px;}
+.liquidre_backend_header .logo .a_logo img {width: 100px;height: 48px;}
+.liquidre_backend_header.liquidre_front_header .logo {background: transparent;min-height: 100%;top: -9px;}
+.liquidre_backend_header.liquidre_front_header .logo .a_logo {padding: 0;}
+.custom_header.liquidre_backend_header .custom_menu {padding: 0;}
+.liquidre_backend_header.liquidre_front_header .container {width: 1170px;padding-right: 15px;padding-left: 15px;}
+.custom_header.liquidre_backend_header .sign_right ul li:last-child a {padding-right: 0;}
+
+
+
+/** banner section ***/
+.banner_svg {background: url(../images/bg_back.svg);height: 660px;background-size: cover;background-position: center center;position: relative;}
+.banner_svg:after {content: " ";position: absolute;left: 0;width: 100%;height: 100%;top: 0;background: rgb(0, 0, 0);z-index: -1;}
+.banner_svg:before {content: " ";position: absolute;left: 0;width: 100%;height: 100%;top: 0;background: rgb(12, 12, 12);z-index: -1;}
+.simple_btn span {margin-left: 8px;display: inline-block;vertical-align: middle;}
+.simple_btn {color: #FFFFFF;font-family: Roboto;font-size: 16px;font-weight: 500;line-height: 19px;display: inline-block;vertical-align: middle;}
+.btn_join {background-color: #1875F0;border-radius: 4px;color: #FFFFFF;font-family: Roboto;font-size: 16px;font-weight: 500;line-height: 19px;padding: 12px 24px;margin: 0 24px 0 0px;display: inline-block;vertical-align: middle;}
+.inner_banner_text p {color: #FFFFFF;font-family: Roboto;font-size: 16px;line-height: 26px;margin: 0 0 24px 0;padding: 0;}
+.inner_banner_text h2 {color: #FFFFFF;font-family: Roboto;font-size: 28px;font-weight: bold;letter-spacing: 1px;line-height: 33px;margin: 0 0 24px 0;padding: 0;}
+.innner_content {position: absolute;width: 100%;top: 50%;left: 0;transform: translateY(-50%);}
+.inner_banner_text {float: left;}
+.video_custom_play {float: right;}
+.video_custom_play a {display: inline-block;margin-top: 55px;}
+.banner_Center {position: relative;}
+.banner_svg .container {height: 100%;}
+.banner_Center {position: relative;display: inline-block;width: 100%;height: 100%;}
+
+
+/**** proress section***/
+.section_progress {padding: 100px 0 0 0;}
+.home_global_head p span {margin-right: 8px;position: relative;top: 1px;}
+.home_global_head p {color: #1875F0;font-family: Roboto;font-size: 18px;font-weight: 500;line-height: 24px;float: right;margin: 6px 0 0 0;padding: 0;}
+.home_global_head h2 {color: #4A4A4A;font-family: Roboto;font-size: 24px;font-weight: bold;line-height: 34px;margin: 0;padding: 0;float: left;    text-transform: uppercase;}
+.list_img img {width: 100%;}
+.listing_p > ul {padding: 0 0 25px 0;margin: 0 -15px;list-style: none;}
+.listing_p > ul > li {float: left;width: 25%;padding-right: 15px;padding-left: 15px;opacity: 0.30;}
+.listing_p > ul > li.selected_active {opacity: 1;}
+.box_p {background: #fff;}
+.box_p h2 {color: #000000;font-family: Roboto;font-size: 16px;font-weight: 500;line-height: 24px;margin: 0;padding: 16px 16px 10px 16px;}
+.box_p p {opacity: 0.5;color: #000000;font-family: Roboto;font-size: 14px;line-height: 16px;margin: 0;padding: 0px 16px 0px 16px;}
+.box_p p.num_p {color: #1875F0;font-family: Roboto;font-size: 22px;font-weight: 500;line-height: 25px;padding: 20px 16px 16px 16px;margin: 0;}
+.box_p {background: #fff;    box-shadow: 0px 5px 26px 0px rgba(0,0,0,0.05);}
+.listing_p {margin: 32px 0 0px 0;padding: 0;}
+.s_value span svg {stroke-width: 14px;height: 14px;fill: #1875F0;}
+.select_data {border-radius: 4px;background: #fff;padding: 24px 209px 24px 24px;position: relative;box-shadow: 0px 5px 26px 0px rgba(0,0,0,0.05);}
+.value_shown {margin-bottom: 16px;}
+.value_shown label {color: #000000;font-family: Roboto;font-size: 16px;font-weight: 500;line-height: 24px;margin: 0;margin-right: 8px;}
+.s_value {color: #1875F0;font-family: Roboto;font-size: 16px;font-weight: 500;line-height: 24px;}
+.value_shown {margin-bottom: 16px;}
+.value_shown:last-child {margin-bottom: 0;}
+.first_d {float: left;width: 50%;}
+.first_d.last_progress {width: 20%;}
+.info_svg  {margin-left: 5px;display: inline-block;vertical-align: middle;}
+.progress_status label span {opacity: 0.25;color: #2C3E50;font-family: Roboto;font-size: 16px;font-weight: 500;line-height: 19px;}
+.progress_status label {color: #2C3E50;font-family: Roboto;font-size: 16px;font-weight: 500;line-height: 19px;margin: 0 0 10px 0;padding: 0;}
+.progress_bar .completed_p {height: 19px;width: 150px;border-radius: 4px;background-color: #1875F0;display: inline-block;}
+.progress_bar {height: 19px;border-radius: 4px;background-color: #F0F0F0;width: 185px;}
+.btn_share {margin-top: 16px;}
+.btn_share a {border-radius: 4px;background-color: #1875F0;width: 100%;display: inline-block;color: #FFFFFF;font-family: Roboto;font-size: 16px;font-weight: 500;line-height: 19px;padding: 12px 44px;margin: 0;text-align: center;}
+.first_d.last_progress {width: 185px;position: absolute;right: 24px;top: 24px;min-height: 107px;}
+.bottom_panel .pagination_custom {float: right;}
+.bottom_panel p {float: left;opacity: 0.8;color: #000000;font-family: Roboto;font-size: 16px;font-weight: 500;line-height: 19px;}
+.bottom_panel p a {border-radius: 4px;background-color: #1875F0;color: #FFFFFF;font-family: Roboto;font-size: 16px;font-weight: 500;padding: 12px 32px;line-height: 19px;margin: 0;display: inline-block;margin-left: 16px;}
+.bottom_panel {padding: 24px 0 0 0;margin: 0;}
+.pagination_custom span a.current_Active {border: 2px solid #1875F0;border-radius: 4px;background-color: #FFFFFF;}
+.pagination_custom span a {height: 34px;width: 34px;border: 2px solid rgba(0,0,0,0.05);border-radius: 4px;background-color: transparent;display: inline-block;color: #000000;font-family: Roboto;font-size: 12px;font-weight: 500;line-height: 14px;padding: 9px;text-align: center;margin: 0;}
+.liquid_box_content {border-radius: 4px;background: #fff;padding: 24px;position: relative;margin: 0;    box-shadow: 0px 5px 26px 0px rgba(0,0,0,0.05);}
+.liquid_l {float: left;width: 65%;padding-left: 0;padding-right: 15px;}
+.graph_custom {border: 2px solid #D9D9D9;border-radius: 2px;background-color: #FFFFFF;padding: 11px;text-align: center;height: 378px;}
+.graph_custom img {width: 100%;height: 100%;}
+.liquid_r {float: left;width: 35%;padding-left: 15px;padding-right: 0;}
+.tab_limit {border: 2px solid #D9D9D9;border-radius: 4px;background-color: #FFFFFF;}
+.tab_head li {width: 33.33%;float: left;background-color: #FFFFFF;box-shadow: inset 0 -3px 0 0 #F0F0F0;text-align: center;}
+.tab_head {padding: 0;margin: 0;list-style: none;}
+.tab_head li a {color: #DBDBDB;font-family: Roboto;font-size: 16px;font-weight: 500;line-height: 19px;padding: 16px 0px;display: inline-block;text-align: center;width: 100%;position: relative;}
+.tab_head li.current_active a:after {content: " ";position: absolute;bottom: 0;left: 0;width: 100%;height: 3px;box-shadow: inset 0 -3px 0 0 #1875F0;}
+.tab_head li.current_active a {color: #1875F0;}
+.input_cash {margin-bottom: 24px;}
+.input_cash label {opacity: 0.5;color: #000000;font-family: Roboto;font-size: 13px;line-height: 15px;display: block;font-weight: 500;text-transform: uppercase;margin: 0 0 8px 0;padding: 0;}
+.input_cash input {border: 1px solid #D9D9D9;border-radius: 4px;background-color: #FFFFFF;width: 100%;height: 43px;box-shadow: none;padding: 0 45px 0 10px;font-size: 16px;color: #000;}
+.market_biding {padding: 25px;}
+.input_cash input::-webkit-input-placeholder {color: #000;}
+.input_cash input::-moz-placeholder {color: #000;}
+.input_cash input:-ms-input-placeholder {color: #000;}
+.input_cash input:-moz-placeholder {color: #000;}
+.dolor_ic {position: relative;display: inline-block;width: 100%;}
+.dolor_ic:After {position: absolute;right: 12px;top: 12px;opacity: 0.5;color: #000000;content: "USD ";font-size: 16px;}
+.buy_btn {float: left;width: 50%;padding-left: 15px;padding-right: 15px;}
+.sell_btn {width: 50%;float: left;padding-left: 15px;padding-right: 15px;}
+.buy_btn span, .sell_btn span {display: block;color: #37DB8E;font-family: Roboto;font-size: 13px;line-height: 15px;margin-bottom: 8px;}
+.btn_m a {color: #FFFFFF;font-family: Roboto;font-size: 16px;font-weight: 500;line-height: 19px;border-radius: 4px;background-color: #37DB8E;display: inline-block;width: 100%;padding: 16px 0;text-align: center;text-transform: uppercase;}
+.buy_sell_info {margin: 0 -15px;}
+.btn_m {margin-bottom: 8px;}
+.buy_btn label, .sell_btn label {border: 1px solid #D9D9D9;border-radius: 2px;background-color: #FFFFFF;width: 100%;height: 31px;opacity: 0.5;color: #000000;font-family: Roboto;font-size: 13px;line-height: 15px;padding: 7px 0;text-align: center;font-weight: 500;margin: 0;}
+.sell_btn span {color: #FF5E57;}
+.sell_btn .btn_m a {background: #FF5E57;}
+.order_detail_crm {margin: 24px 0 0 0;}
+.order_detail_crm p {opacity: 1;color: #868686;font-family: Roboto;font-size: 13px;line-height: 15px;text-transform: uppercase;font-weight: 500;margin: 0 0 16px 0;padding: 0;}
+.order_detail_crm p:last-child {margin: 0;}
+.order_detail_crm p span {color: #1875F0;font-family: Roboto;font-size: 13px;line-height: 15px;float: right;font-weight: 600;opacity: 1;}
+.tabs {display: none;}
+.currentactive {display: block;}
+.section_progress.section_progress_second {padding-bottom: 100px;}
+
+
+/*** Join our Hub.Chat Community section **/
+.btn_comm a {border-radius: 4px;background-color: #1875F0;color: #FFFFFF;font-family: Roboto;font-size: 16px;line-height: 19px;padding: 12px 32px;display: inline-block;font-weight: 500;}
+.join_l p {color: #000000;font-family: Roboto;font-size: 18px;line-height: 34px;margin: 0 0 32px 0;padding: 0;font-weight:500;}
+.join_l h2 {color: #1875F0;font-family: Roboto;font-size: 28px;font-weight: bold;line-height: 34px;margin: 0 0 24px 0;padding: 0;}
+.join_l {float: left;max-width: 535px;}
+.join_r {float: right;}
+.section_community_hub {position: relative;}
+.section_community_hub:before {position: absolute;left: 0;content: " ";top: 0;background: #fafafa;width: 400px;height: 345px;z-index: -1;}
+.join_div {position: relative;padding: 60px 0 0 0;}
+.join_div:before {position: absolute;content: " ";left: -90px;top: 0;background: url(../images/bg_join.svg);width: 1098px;height: 345px;z-index: -1;}
+
+/*** footer ***/
+.fa_left {width: 50%;float: left;}
+.fa_right {width: 50%;float: left;}
+.footer_custom {padding: 100px 0;}
+.fa_link {padding: 0;margin: 0;}
+.fa_left p {opacity: 0.25;color: #2C3E50;font-family: Roboto;font-size: 16px;font-weight: 500;line-height: 19px;margin: 16px 0 16px 0;padding: 0;}
+.fa_link li {display: inline-block;}
+.fa_link li a {color: #2C3E50;font-family: Roboto;font-size: 16px;line-height: 19px;font-weight: 500;}
+.fa_link li:last-child {padding-left: 30px;position: relative;}
+.fa_link li:last-child:After {content: " ";position: absolute;left: 10px;top: 7px;width: 6px;height: 6px;border-radius: 50%;opacity: 0.5;background: #2C3E50;}
+.fa_right h2 {color: #2C3E50;font-family: Roboto;font-size: 16px;font-weight: 500;line-height: 19px;margin: 5px 0 30px 0;padding: 0;}
+.input_newsletter input {border: 2px solid #F5F5F5;border-radius: 4px;background-color: #FFFFFF;opacity: 1;color: #cdd2d6;font-family: Roboto;font-size: 13px;height: 43px;line-height: 15px;width: 100%;padding: 0 10px;margin: 0;}
+.input_newsletter {position: relative;padding-right: 136px;}
+.subscribe_btn {position: absolute;right: 0;top: 0;height: 43px;width: 120px;border-radius: 4px;background-color: #1875F0;color: #FFFFFF;font-family: Roboto;font-size: 16px;font-weight: 500;line-height: 19px;text-align: center;padding: 11px 0;}
+.subscribe_btn:hover {color: #fff;}
+
+
+/** dex re ***/
+
+/** DexRe-Now-Wallet-Detected page **/
+.app_wrapper {background-color: #F9F9F9;padding: 32px 0 70px 0;}
+.inner_Content_app {padding: 48px 70px;margin: 0;background: #fff;border-radius: 4px;}
+.first_sec_app h2 {color: #000000;font-family: Roboto;font-size: 18px;font-weight: bold;line-height: 26px;text-align: center;text-transform: uppercase;margin: 0 0 24px 0;padding: 0;}
+.first_sec_app p {color: #000000;font-family: Roboto;font-size: 16px;line-height: 34px;text-align: center;margin: 0 auto;padding: 0;max-width: 600px;}
+.ul_data_client {padding: 0;margin: 0;list-style: none;}
+.ul_data_client li {float: left;width: 33.33%;}
+.li_box_app a {color: #1875F0;font-family: Roboto;font-size: 12px;line-height: 14px;text-align: center;font-weight: 500;text-decoration: underline;}
+.li_box_app h6 {color: #000000;font-family: Roboto;font-size: 18px;font-weight: 500;line-height: 24px;text-align: center;margin: 20px 0 16px 0;padding: 0;}
+.li_box_app {border: 2px solid #EFEFEF;border-radius: 8px;background-color: #FFFFFF;text-align: center;padding: 32px;}
+.ul_data_client li {float: left;width: 33.33%;padding-left: 15px;padding-right: 15px;}
+.ul_data_client {padding: 30px 0 0 0;margin: 0;list-style: none;max-width: 860px;margin: 0 auto;}
+.first_sec_app {padding-bottom: 50px;border-bottom: 2px solid #F1F1F1;max-width: 860px;margin: 0 auto;}
+.first_sec_app.second_sec_app {padding-top: 50px;}
+.first_sec_app.second_sec_app p {max-width: 100%;}
+.first_sec_app.second_sec_app.third_sec_app {padding-bottom: 20px;border: 0;}
+.third_sec_app textarea {width: 100%;border: 0;height: 400px;border-radius: 4px;background-color: #F1F1F1;}
+.first_sec_app.second_sec_app.third_sec_app h2 {margin-bottom: 32px;}
+
+
+/** DexRe–ID-Verification ***/
+.file-btn {padding: 0;position: relative;display: block;border: 2px dashed #8cbaf8;opacity: 1;height: 64px;width: 340px;margin: 0 auto;}
+.file-btn .btn {background: transparent;border: 0px solid #dddddd;border-radius: 0;box-shadow: none;margin-right: 0;padding: 0;float: none;height: 64px;color: #1875F0;font-family: Roboto;font-size: 14px;font-weight: 500;line-height: 16px;text-align: center;width: 100%;text-transform: uppercase;line-height: 60px;}
+.file-btn input[type=file] {position: absolute;top: 0;bottom: 0;left: 0;right: 0;opacity: 0;cursor: pointer;width: 100%;}
+.uploda_verifly .file-btn {margin-top: 40px;}
+.uploda_verifly p {color: #000000;font-family: Roboto;font-size: 16px;line-height: 34px;text-align: center;margin: 0 auto;padding: 0;max-width: 600px;}
+.uploda_verifly h2 {color: #000000;font-family: Roboto;font-size: 18px;font-weight: bold;line-height: 26px;text-align: center;text-transform: uppercase;margin: 0 0 24px 0;padding: 0;}
+.height_100 {height: 100%;}
+.height_100 body {height: 100%;background: #F9F9F9;}
+
+
+/*** DexRe-Dashboard-My-Properties***/
+.property_table {background-color: #F9F9F9;padding-top: 32px;}
+.prp_content {margin: 0 0 50px 0;background: #fff;border-radius: 4px;padding: 0;}
+.property_sale h6 {color: #000000;font-family: Roboto;font-size: 16px;font-weight: 500;line-height: 22px;margin: 0;padding: 0;float: left;margin-top: 7px;text-transform: uppercase;}
+.btn_add {float: right;}
+.btn_add a {border-radius: 4px;background-color: #1875F0;color: #FFFFFF;font-family: Roboto;font-size: 12px;font-weight: bold;line-height: 12px;text-align: center;text-transform: uppercase;padding: 10px 16px;display: inline-block;}
+.property_sale {padding: 24px;}
+.table_responsive .custom_table thead tr th {border-top: 2px solid #f7f7f7 !important;border-bottom: 2px solid #f7f7f7 !important;padding: 10px 24px;opacity: 0.25;color: #000000;font-family: Roboto;font-size: 12px;font-weight: 500;text-transform: uppercase;line-height: 14px;}
+.table_responsive .custom_table tbody tr td {color: #000000;font-family: Roboto;font-size: 14px;line-height: 16px;padding: 16px 24px;border: 0;font-weight: 500;vertical-align: middle;}
+.table_responsive {overflow: auto;display: block;width: 100%;}
+.brn_table_view {border: 2px solid #c6ddfc;border-radius: 4px;color: #1875F0;font-family: Roboto;font-size: 12px;font-weight: 500;line-height: 11px;text-align: center;padding: 8px 16px;display: inline-block;}
+.table_responsive .custom_table tbody tr td:last-child {text-align: right;}
+.form_serch span svg {height: 14px;width: 14px;fill: #207af1;}
+.form_serch input::-webkit-input-placeholder {color: #c5c5c5;font-weight:500;}
+.form_serch input::-moz-placeholder {color: #c5c5c5;font-weight:500;}
+.form_serch input:-ms-input-placeholder {color: #c5c5c5;font-weight:500;}
+.form_serch input:-moz-placeholder {color: #c5c5c5;font-weight:500;}
+.form_serch {position: relative;padding-left: 0;}
+.form_serch span {position: absolute;left: 7px;top: 8px;}
+.form_serch input {color: #c5c5c5;font-family: Roboto;font-size: 14px;font-weight: 500;line-height: 16px;border: 0;height: 30px;width: auto;padding: 0 0 0 30px;    width: 160px;}
+
+
+
+
+/** DexRe–Dashboard-My-Properties-Sell-Property ***/
+.modal-backdrop.fade {opacity: 0.2;}
+.pop_sell h4.modal-title {color: #000000;font-family: Roboto;font-size: 18px;font-weight: bold;line-height: 26px;text-align: center;text-transform: uppercase;}
+.pop_sell .modal-dialog .modal-content .modal-header {border: 0;padding: 48px 40px 32px 40px;}
+.pop_sell .modal-dialog .modal-content {box-shadow: none;border: 0;border-radius: 4px;}
+.pop_sell .modal-dialog {width: 529px;padding-top: 120px;}
+.input_custom input {border: 2px solid #EAEAEA;border-radius: 4px;background-color: #FFFFFF;width: 100%;height: 44px;padding: 0 10px;margin: 0;color: #c1c1c1;font-family: Roboto;font-size: 14px;line-height: 16px;}
+.input_custom > label {opacity: 0.5;color: #000000;font-family: Roboto;font-size: 12px;font-weight: 500;line-height: 14px;display: block;text-transform: uppercase;margin: 0 0 8px 0;}
+.modal_custom {padding: 0 40px;}
+.input_custom input::-webkit-input-placeholder, .input_custom textarea::-webkit-input-placeholder {color: #c1c1c1;}
+.input_custom input::-moz-placeholder, .input_custom textarea::-moz-placeholder {color: #c1c1c1;}
+.input_custom input:-ms-input-placeholder, .input_custom textarea:-ms-input-placeholder {color: #c1c1c1;}
+.input_custom input:-moz-placeholder, .input_custom textarea:-moz-placeholder {color: #c1c1c1;}
+.input_custom {margin-bottom: 22px;}
+.input_custom textarea {border: 2px solid #EAEAEA;border-radius: 4px;background-color: #FFFFFF;width: 100%;margin: 0;color: #c1c1c1;font-family: Roboto;font-size: 14px;line-height: 16px;height: 140px;padding: 10px 10px;}
+.up_img span {width: 100%;float: left;border: 2px solid #EAEAEA;border-radius: 4px;height: 140px;}
+.upload_img_custom .up_img {width: 50%;float: left;padding-left: 15px;padding-right: 15px;}
+.up_popup_btn {float: left;width: 50%;    padding-left: 15px;padding-right: 15px;}
+.upload_img_custom {margin: 0 -15px;}
+.btn_upload_verifly {padding: 0;position: relative;display: block;border: 2px solid #8cbaf8;opacity: 1;height: 44px;margin: 45px auto 0;border-radius: 4px;}
+.btn_upload_verifly .btn {background: transparent;border: 0px solid #dddddd;border-radius: 0;box-shadow: none;margin-right: 0;padding: 0;float: none;height: 40px;color: #1875F0;font-family: Roboto;font-size: 14px;font-weight: 600;text-align: center;width: 100%;text-transform: uppercase;line-height: 41px;}
+.btn_upload_verifly input[type=file] {position: absolute;top: 0;bottom: 0;left: 0;right: 0;opacity: 0;cursor: pointer;width: 100%;}
+.btn_upload_verifly .btn svg {width: 14px;height: 14px;fill: #1875F0;margin-right: 8px;position: relative;top:2px;}
+.btn_cstm_submit {padding: 32px 40px 32px 40px;text-align: center;}
+.btn_cstm_submit a {border-radius: 4px;background-color: #1875F0;color: #FFFFFF;font-family: Roboto;font-size: 14px;font-weight: bold;line-height: 16px;padding: 12px 40px;margin: 0;display: inline-block;    text-transform: uppercase;}
+.pop_sell .modal-dialog .modal-content .modal-header button.close {opacity: 1;position: absolute;right: 24px;top: 24px;}
+.table_responsive .custom_table tbody tr td .a_black {color: #000;}
+
+
+/*** DexRE-add-property-explainer ***/
+.pop_sell.pop_info .modal-dialog {width: 780px;}
+.info_popup_custom p {color: #000000;font-family: Roboto;font-size: 14px;line-height: 26px;margin: 0 0 16px 0;padding: 0;font-weight: 500;}
+.info_works h2 {color: #000000;font-family: Roboto;font-size: 18px;font-weight: bold;line-height: 26px;text-align: center;text-transform: uppercase;margin: 0 0 30px 0;}
+.info_works ul {margin: 0;padding: 0;list-style: none;}
+.info_works ul li {color: #000000;font-family: Roboto;font-size: 14px;font-weight: 500;line-height: 26px;margin: 0 0 32px 0;padding: 0 0 0 50px;position: relative;vertical-align: middle;}
+.info_works ul li span {background: #e7f1fd;height: 30px;width: 30px;display: inline-block;border-radius: 50%;color: #1875F0;font-family: Roboto;font-size: 14px;font-weight: bold;line-height: 32px;text-align: center;position: absolute;left: 0;top: -1px;}
+.info_popup_custom p:last-child {margin-bottom: 0;}
+
+
+/*** DexRE-add-property-address ***/
+.three_row {margin: 0 -15px;}
+.input_3 {width: 33.33%;float: left;padding-left: 15px;padding-right: 15px;}
+.input_custom label span {margin-left: 8px;position: relative;top: 2px;display: inline-block;}
+.input_custom label span svg {stroke-width: 12px;height: 12px;fill: #1875f0;cursor: pointer;}
+.pop_sell .modal-dialog .modal-content .modal-header .title_modal_p {color: #1875F0;font-family: Roboto;font-size: 12px;font-weight: bold;line-height: 14px;text-align: center;margin: 0 0 18px 0;padding: 0;}
+.pop_sell.pop_step_prp .modal_custom .three_row + .input_custom {margin-bottom: 0;}
+.pop_tool {position: absolute;width: 433px;background: #fff;top: 0px;box-shadow: -1px 1px 15px 0 rgba(0,0,0,0.1);padding: 24px 24px 18px 24px;left: 28px;display: none;transition: ease-in-out .5s;}
+.pop_tool h2 {color: #000000;font-family: Roboto;font-size: 12px;font-weight: 600;margin: 0 0 16px 0;padding: 0;}
+.pop_tool p {color: #000000;font-family: Roboto;font-size: 12px;line-height: 26px;font-weight: 400;margin: 0;text-transform: capitalize;}
+.pop_sell.pop_step_prp .modal_custom .three_row + .input_custom label {opacity: 1;color: #969696;}
+.input_custom label span:Hover .pop_tool {display: block;}
+.pop_sell.pop_step_prp .modal-dialog .modal-content .modal-header {padding: 24px 40px 32px 40px;}
+
+/** DexRE-trustee-pick ***/
+.title_text {color: #000000;font-family: Roboto;font-size: 14px;line-height: 26px;margin: 16px 0 8px 0;text-align: center;}
+.title_text_second {color: #000000;font-family: Roboto;font-size: 14px;line-height: 26px;margin: 0;text-align: center;}
+.pop_sell.pop_pick_sell .modal-dialog {width: 670px;}
+.pick_data {margin: 0 -15px;padding: 0;list-style: none;}
+.pick_data li {float: left;width: 33.33%;padding-left: 15px;padding-right: 15px;}
+.inner_detail_pick {border: 2px solid #f5f5f5;border-radius: 4px;background-color: #FFFFFF;padding: 18px;}
+.img_pick {height: 56px;width: 56px;margin: 0 auto 16px;display: block;}
+.img_pick span {height: 56px;width: 56px;border-radius: 4px;background-color: #ECECEC;display: inline-block;}
+.inner_detail_pick h6 {color: #000000;font-family: Roboto;font-size: 14px;line-height: 18px;text-align: center;margin: 0 0 4px 0;font-weight: 400;}
+.para_pick {color: #000000;font-family: Roboto;font-size: 14px;font-weight: 500;line-height: 18px;text-align: center;margin: 0 0 8px 0;}
+.inner_detail_pick .div_rating {margin-bottom: 12px;text-align: center;}
+.div_rating span {height: 12px;width: 12px;display: inline-block;}
+.div_rating span svg {width: 12px;height: 12px;fill: #f5a623;}
+.pick_emial {color: #000000;font-family: Roboto;font-size: 12px;font-weight: 500;line-height: 14px;text-align: center;margin: 0 0 8px 0px;}
+.pick_date {color: #000000;font-family: Roboto;font-size: 12px;font-weight: 500;line-height: 14px;margin: 0 0 18px 0;text-align: center;}
+.a_visit {color: #1875F0;font-family: Roboto;font-size: 11px;line-height: 11px;display: inline-block;width: 100%;text-decoration: underline;font-weight: 400;text-align: center;}
+.a_prev {border-radius: 4px;background-color: #1875F0;color: #FFFFFF;font-family: Roboto;font-size: 14px;font-weight: bold;line-height: 16px;padding: 10px 32px;display: inline-block;text-transform: uppercase;border: 2px solid #1875F0;margin-left: 8px;}
+.a_back {border: 2px solid #8cbaf8;border-radius: 4px;background-color: #FFFFFF;color: #1875F0;font-family: Roboto;font-size: 14px;font-weight: bold;line-height: 16px;padding: 10px 32px;display: inline-block;text-transform: uppercase;margin-right: 8px;}
+.btn_step_all {padding: 32px 40px 32px 40px;text-align: center;}
+.a_prev:Hover {color: #fff;}
+
+
+/*** DexRE-add-property-address-pop-legal-2***/
+.para_legal {color: #000000;font-family: Roboto;font-size: 14px;margin: 0;line-height: 26px;font-weight: 500;}
+.para_legal.para_approval_request {max-width: 353px;text-align: center;margin: 0 auto;}
+
+
+/*** DexRe–Dashboard-My-Properties-IP-3***/
+.pop_sell.pop_legal_notice .modal-dialog {width: 591px;}
+.legal_img img {width: 100%;}
+.a_pr span svg {height: 16px;width: 19px;fill: #1875F0;}
+.a_download span svg {height: 16px;width: 13px;fill: #1875F0;}
+.notice_custom_btn {padding: 22px 40px 25px 40px;}
+.l_btn_notice a span {display: inline-block;vertical-align: middle;margin-right: 10px;}
+.l_btn_notice a.a_pr {margin-right: 24px;}
+.l_btn_notice a {display: inline-block;border: 2px solid #8cbaf8;border-radius: 4px;color: #1875F0;font-family: Roboto;font-size: 14px;font-weight: bold;line-height: 16px;padding: 10px 24px;text-transform: uppercase;}
+.r_btn_notice {float: right;}
+.l_btn_notice {float: left;}
+.r_btn_notice a {display: inline-block;border: 2px solid #1875F0;color: #fff;font-family: Roboto;font-size: 14px;font-weight: bold;line-height: 22px;padding: 10px 24px;text-transform: uppercase;background-color: #1875F0;border: 2px solid #1875F0;height: 44px;border-radius:4px;}
+
+/*** DexRe–Dashboard-My-Properties-IP-4***/
+.process_almost_done p {color: #000000;font-family: Roboto;font-size: 14px;line-height: 26px;text-align: center;font-weight: 500;margin: 0 0 16px 0;}
+.process_almost_done .file-btn {margin-top: 32px;}
+.upload_a {text-align: center;padding-top: 32px;padding-bottom: 0px;}
+.upload_a a {border-radius: 4px;background-color: #1875F0;color: #FFFFFF;font-family: Roboto;font-size: 14px;font-weight: bold;line-height: 16px;padding: 12px 24px;text-transform: uppercase;display: inline-block;    border: 2px solid #1875F0;}
+.btn_cstm_submit a.back_dash {padding: 12px 16px;color: #1875F0;font-family: Roboto;font-size: 14px;font-weight: bold;border-radius: 4px;line-height: 16px;border: 2px solid #8cbaf8;background: #fff;}
+
+/*** DexRe–Property-Listing-Manage***/  
+.pop_sell.pop_sell_discription .modal-dialog {width: 780px;}
+.profile_cstm {position: absolute;left: 0;top: 0;border: 2px solid #C8C8C8;border-radius: 4px;}
+.content_property {position: relative;padding: 0 0 0 256px;min-height: 170px;}
+.price_d {float: left;width: 22%;padding: 0 10px;}
+.status_d {float: left;width: 22%;padding: 0 10px;}
+.add_d {float: left;width: 56%;padding: 0 10px;}
+.p_three_col {margin: 0 -10px;padding-bottom: 20px;}
+.head_h {color: #000000;font-family: Roboto;font-size: 12px;font-weight: 500;line-height: 14px;margin: 0 0 8px 0;padding: 0;text-transform: uppercase;}
+.paragraph_p {color: #1875F0;font-family: Roboto;font-size: 14px;font-weight: 500;line-height: 26px;margin: 0;}
+.legal_dis h6 {color: #000000;font-family: Roboto;font-size: 12px;font-weight: 500;text-transform: uppercase;    margin: 0 0 8px 0;}
+.legal_dis p {color: #000000;font-family: Roboto;font-size: 14px;line-height: 26px;margin: 0;font-weight: 500;}
+.property_dis p {color: #000000;font-family: Roboto;font-size: 14px;line-height: 26px;margin: 0;padding: 0;font-weight: 500;}
+.property_dis h6 {text-transform: uppercase;color: #000000;font-family: Roboto;font-size: 12px;font-weight: 500;margin: 0 0 8px 0;line-height: 14px;}
+.property_dis {padding: 0;margin: 30px 0px 0 0;}
+.btn_flow {padding: 22px 40px 25px 40px;}
+.r_flow {float: right;}
+.l_flow {float: left;}
+.l_flow a {border: 2px solid #8cbaf8;border-radius: 4px;padding: 12px 24px;display: inline-block;color: #1875F0;font-family: Roboto;font-size: 14px;font-weight: bold;line-height: 16px;    text-transform: uppercase;}
+.r_flow a {border: 2px solid#1875F0;border-radius: 4px;padding: 12px 24px;display: inline-block;color: #fff;font-family: Roboto;font-size: 14px;font-weight: bold;line-height: 16px;background: #1875F0;    text-transform: uppercase;}
+
+/** DexRe–Property-Listing-Transfer**/
+.property_dis .input_custom input {color: #000;}
+.property_dis .input_custom input::-webkit-input-placeholder {color: #000;}
+.property_dis .input_custom input::-moz-placeholder {color: #000;}
+.property_dis .input_custom input:-ms-input-placeholder {color: #000;}
+.property_dis .input_custom input:-moz-placeholder {color: #000;}
+.property_dis .input_custom {margin-bottom: 10px;}
+
+
+/** DDexRe–Property-Listing-Info-2**/
+.popup_Wait .para_legal {text-align: center;margin: 0 0 32px 0;}
+.popup_Wait .input_custom label {opacity: 1;}
+.popup_Wait .input_custom {margin-bottom: 12px;}
+
+/***DexRe–Property-Listing-Info-Title-Warning**/
+.warning_prp_msg {background: #fff;width: 100%;border-radius: 4px;padding: 24px;margin-bottom: 16px;}
+.svg_warning {vertical-align: middle;display: inline-block;line-height: 100%;margin-right: 8px;margin-top: 10px;}
+.svg_warning svg {height: 22px;width: 25px;fill: #FF3F34;}
+.text_warning {display: inline-block;vertical-align: middle;color: #FF3F34;font-family: Roboto;font-size: 14px;font-weight: 500;line-height: 20px;text-transform: uppercase;margin-top: 10px;}
+.warning_prp_msg a {color: #FFFFFF;font-family: Roboto;font-size: 14px;font-weight: bold;line-height: 16px;border-radius: 4px;background-color: #1875F0;display: inline-block;padding: 12px 16px;float: right;}
+
+
+/** DexRe–Property-Listing-Buy-Info-Congrats **/
+.pop_done_Sell .para_legal {text-align: center;}
+.video_wrapper img {width: 100%;}
+
+/** new dexre ***/
+
+
+/** DexRE/no-dapp ***/
+.web3_wrapper {width: 90%;margin: 0 auto;padding: 48px 72px;background: #fff;border-radius: 4px;}
+.web3_img {text-align: center;margin-bottom: 48px;}
+.web3_wrapper h2 {color: #000000;font-family: Roboto;font-size: 24px;font-weight: bold;line-height: 28px;text-align: center;text-transform: uppercase;margin: 0 0 24px 0;}
+.web3_wrapper p {width: 460px;color: #000000;font-family: Roboto;font-size: 16px;line-height: 26px;text-align: center;margin: 0 auto;padding-bottom: 32px;}
+.btn_metamask {text-align: center;margin-bottom: 72px;}
+.btn_metamask a {border-radius: 4px;background-color: #1875F0;display: inline-block;padding: 12px 24px;color: #FFFFFF;font-family: Roboto;font-size: 14px;font-weight: bold;line-height: 16px;text-align: center;text-transform: uppercase;}
+.video_mask span {border-radius: 4px;background-color: #F1F1F1;height: 400px;display: inline-block;width: 100%;margin-top: 48px;}
+.video_mask {border-top: 2px solid #f1f1f1;width: 700px;margin: 0 auto;}
+
+/*** DexREverifynew ***/
+.tooltip_v {position: absolute;width: 300px;background: #fff;top: 50%;box-shadow: -1px 1px 15px 0 rgba(0,0,0,0.1);padding: 24px;left: 20px;display: none;transition: ease-in-out .5s;transform: translateY(-50%);z-index: 9;}
+.tooltip_v p {color: #000000;font-family: Roboto;font-size: 12px;line-height: 26px;margin: 0;}
+.tooltip_verifly svg {width: 12px;height: 12px;fill: #1875f0;cursor: pointer;}
+.tooltip_verifly {position: absolute;right: 16px;top: 14px;}
+.input_wrapper_for_tolltip {position: relative;}
+.form_inner_verifly_wrapper {position: relative;margin-top: 48px;}
+.form_verifly_new > p {color: #000000;font-family: Roboto;font-size: 16px;line-height: 26px;text-align: center;margin: 0;font-weight: 500;}
+.form_verifly_new h2 {color: #000000;font-family: Roboto;font-size: 18px;font-weight: bold;line-height: 26px;text-align: center;text-transform: uppercase;margin: 0 0 24px 0;}
+.form_verifly_new {margin: 0 auto;padding: 48px 120px;background: #fff;border-radius: 4px;}
+.tooltip_verifly:hover .tooltip_v {display: block;}
+.form_inner_verifly_wrapper .input_custom {margin-bottom: 32px;}
+.input_r {float: left;width: 30%;padding-left: 12px;padding-right: 12px;}
+.input_l {width: 70%;float: left;padding-left: 12px;padding-right: 12px;}
+.input_2_row {margin: 0 -12px;}
+ .input_custom.input_place_black input::-webkit-input-placeholder {color: #000;}
+ .input_custom.input_place_black input::-moz-placeholder {color: #000;}
+ .input_custom.input_place_black input:-ms-input-placeholder {color: #000;}
+ .input_custom.input_place_black input:-moz-placeholder {color: #000;}
+ .file-btn.DexREverifynew_upload a {display: block;height: 24px;width: 19px;margin: 0 auto;}
+.file-btn.DexREverifynew_upload a svg {height: 24px;width: 19px;fill: #1875F0;vertical-align: top;}
+.file-btn.DexREverifynew_upload .btn {width: 100%;height: 100%;white-space: initial;padding: 32px;vertical-align: middle;line-height: 100%;}
+.file-btn.DexREverifynew_upload a {display: block;height: 24px;width: 19px;margin: 0 auto 16px;}
+.file-btn.DexREverifynew_upload .btn span {display: inline-block;width: 340px;margin: 0 auto;word-wrap: break-word;color: #1875F0;font-family: Roboto;font-size: 14px;font-weight: 500;line-height: 22px;text-align: center;}
+.file-btn.DexREverifynew_upload {width: 404px;height: 148px;margin: 48px auto 0;}
+.btn_start_dexre a {color: #FFFFFF;font-family: Roboto;font-size: 14px;font-weight: bold;line-height: 16px;text-align: center;display: inline-block;padding: 12px 32px;border-radius: 4px;background-color: #1875F0;}
+.btn_start_dexre {text-align: center;margin-top: 48px;}
+
+/*** DexRE-trustee-download-notarize-record **/
+.pop_sell.pop_custom_record .modal-dialog {width: 606px;}
+.dex_step_popup {position: relative;margin-bottom: 48px;padding: 11px 0 0 80px;}
+.number_custom_doc {position: absolute;left: 0;top: 0;}
+.number_custom_doc span {height: 48px;width: 48px;border: 3px solid #EFEFEF;display: inline-block;border-radius: 50%;text-align: center;color: #D9D9D9;font-family: Roboto;font-size: 16px;font-weight: bold;line-height: 46px;text-transform: uppercase;}
+.doc_content_dex h2 {color: #000000;font-family: Roboto;font-size: 16px;font-weight: 500;line-height: 26px;margin: 0 0 24px 0;text-transform: uppercase;}
+.doc_content_dex p {color: #000000;font-family: Roboto;font-size: 14px;line-height: 26px;font-weight: 500;margin: 0 0 32px 0;}
+.download_btn a {border-radius: 4px;background-color: #1875F0;color: #FFFFFF;font-family: Roboto;font-size: 14px;font-weight: bold;line-height: 16px;padding: 12px 24px;display: inline-block;}
+.file-btn.file-btn_doc .btn {height: 36px;color: #1875F0;font-family: Roboto;font-size: 14px;font-weight: bold;line-height: 36px;}
+.file-btn.file-btn_doc {margin: 0;height: 36px;width: 183px;}
+.dex_step_popup:last-child {margin-bottom: 0;}
+.active_step span {border: 2px solid #1875F0;color: #1875F0;}
+.pop_custom_record .btn_cstm_submit {padding-left: 120px;text-align: left;}
+
+
+/** DexRE-trustee-confirm **/
+.pop_sell.pop_trustee_confirm h4.modal-title.modal_icon b svg {height: 42px;width: 42px;fill: #3c80d9;position: relative;z-index: 9;}
+.pop_sell.pop_trustee_confirm h4.modal-title.modal_icon span {height: 39px;width: 39px;opacity: 0.8;border-radius: 2px;background: linear-gradient(297.24deg, #FF7427 0%, #FFC73C 100%);display: inline-block;left: 16px;position: absolute;top: 8px;}
+.pop_sell.pop_trustee_confirm h4.modal-title.modal_icon b {position: relative;vertical-align: top;}
+.pop_sell.pop_trustee_confirm .modal-dialog .modal-content .modal-header {padding: 32px 40px 24px 40px;}
+.pop_sell.pop_trustee_confirm .modal-dialog .modal-content .modal-header h4.modal-title.modal_icon {margin-bottom: 32px;}
+.pop_sell.pop_trustee_confirm .modal-dialog .modal-content .modal-header h2 {color: #000000;font-family: Roboto;font-size: 18px;font-weight: bold;line-height: 26px;text-align: center;text-transform: uppercase;}
+.pop_trustee_confirm .para_legal.para_approval_request {max-width: 100%;}
+.pop_sell.pop_trustee_confirm .modal-dialog {width: 606px;}
+.pop_trustee_confirm .btn_cstm_submit {padding: 32px 40px 48px 40px;}
+
+/** DexRE-dissolve-trust-pop-dissolve ***/
+.pop_sell.pop_warning .modal-dialog .modal-content .modal-header {padding: 32px 40px 32px 40px;}
+.pop_warning .para_legal.para_approval_request {max-width: 100%;}
+
+
+/** DexRe–Property-Listing-Manage **/
+.modal_dialog_custom {width: 780px;display: block;margin: 0 auto;padding-left: 10px;padding-right: 10px;-webkit-transform: translate(0, 0);-ms-transform: translate(0, 0);transform: translate(0, 0);transition: transform 0.3s ease-out;}
+
+/** DexRE-transfer-transfer-warning **/
+.pop_sell.pop_warning.pop_warning_transfer .modal-dialog .modal-content .modal-header {padding: 32px 40px 16px 40px;}
+
+/**DexRE/buy-property/fbuyer-warning */
+.tran_detail_modal {margin-top: 16px;}
+.tran_detail_modal label {opacity: 0.5;color: #000000;font-family: Roboto;font-size: 12px;font-weight: 500;line-height: 20px;text-transform: uppercase;margin: 0 0 16px 0;padding: 0;}
+.para_eth_detail {color: #000000;font-family: Roboto;font-size: 14px;font-weight: 500;line-height: 20px;text-transform: uppercase;}
+.para_eth_detail span {color: #1875F0;font-family: Roboto;font-size: 14px;font-weight: 500;line-height: 20px;margin-left: 8px;}
+.tran_detail_modal.legal_detail_modal {margin-top: 24px;position: relative;}
+.tran_detail_modal.legal_detail_modal:after {position: absolute;bottom: 0;left: -40px;width: 509px;border-bottom: 2px solid #f1f1f1;content: " ";}
+.tran_detail_modal.legal_detail_modal p {font-family: Roboto;font-size: 14px;font-weight: 500;line-height: 26px;padding: 0 0 24px 0;color: #000;}
+.only_modal_para_detail {margin-top: 24px;}
+.only_modal_para_detail p {color: #000000;font-family: Roboto;font-size: 14px;line-height: 26px;font-weight: 500;padding: 0;margin: 0;}
+
+/**DexRE-buy-property-processing */
+.btn_step_all_procesing a {padding: 10px 16px;}
+
+/** DexRe–Warnings **/
+.pop_sell.pop_warning_all_wrapper .modal-dialog:first-child {padding-top: 120px;}
+.pop_sell.pop_warning_all_wrapper .modal-dialog {padding-top: 20px;padding-bottom: 20px;}
+
+.pop_sell.pop_sell_discription.pop_chat_modal .modal-dialog:last-child {padding-top: 0;}  
+
+
+
+
+
+/** LiquidRe–US-Investors page ***/
+.bg_grey {background: #f9f9f9;}
+.ui_custom_left_menubar {padding: 0;margin: 0;list-style: none;}
+.ui_content_wrapper {position: relative;padding-left: 250px;padding-right: 250px;}
+.ui_l_sidebar {position: absolute;left: 0;top: 0;width: 250px;}
+.left_menubar {padding: 24px 32px 0 32px;}
+.ui_custom_left_menubar li {display: block;}
+.ui_custom_left_menubar li a {padding: 16px 16px;display: inline-block;color: #4A4A4A;font-family: Roboto;font-size: 14px;font-weight: 500;line-height: 16px;width: 100%;}
+.ui_custom_left_menubar li a span {margin-right: 11px;display: inline-block;vertical-align: middle;}
+.ui_custom_left_menubar li.menu_active a {border-radius: 4px;background-color: #E7F1FD;color: #1875F0;}
+.btn_syndax a {border: 2px solid #8cbaf8;border-radius: 8px;background-color: #FFFFFF;padding: 24px 48px;display: inline-block;color: #1875F0;font-family: Roboto;font-size: 14px;font-weight: 500;text-transform: uppercase;line-height: 16px;text-align: center;}
+.purchase_detail_content p {color: #000000;font-family: Roboto;font-size: 18px;line-height: 34px;text-align: center;margin: 0 0 48px 0;padding: 0;}
+.purchase_detail_content h2 {color: #4A4A4A;font-family: Roboto;font-size: 24px;font-weight: bold;line-height: 34px;text-align: center;margin: 0 0 16px 0;padding: 0;text-transform: uppercase;}
+.purchase_detail_content {border-radius: 4px;background-color: #FFFFFF;padding: 48px 72px;text-align: center;}
+.ui_r_sidebar {padding-top: 24px;}
+
+/** LiquidRe–My-Portfolio-IREO-Selected page ***/
+.portfolio_head {border-radius: 4px;background-color: #FFFFFF;padding: 24px;}
+.a_edit span {vertical-align: middle;display: inline-block;line-height: 100%;margin-right: 8px;}
+.a_edit {color: #1875F0;font-family: Roboto;font-size: 14px;font-weight: 500;display: inline-block;vertical-align: middle;text-transform: uppercase;margin-top: 4px;}
+.edit_profile_div {float: right;}
+.portfolio_head h2 {margin: 0;color: #4A4A4A;font-family: Roboto;font-size: 20px;font-weight: bold;line-height: 26px;text-transform: uppercase;float: left;}
+.portfolio_head h2 span {color: #1875F0;font-family: Roboto;font-size: 20px;font-weight: bold;line-height: 26px;margin-left: 8px;}
+.portfolio_box ul {padding: 0;margin: 0 -15px;list-style: none;}
+.portfolio_box ul li {padding-left: 15px;padding-right: 15px;width: 33.33%;float: left;}
+.box_value {border-radius: 4px;background-color: #FFFFFF;padding: 24px;}
+.portfolio_box {padding: 0;margin: 24px 0 0 0;}
+.box_value h2 {color: #4A4A4A;font-family: Roboto;font-size: 16px;font-weight: 500;line-height: 22px;text-transform: uppercase;margin: 0 0 24px 0;padding: 0;}
+.info_value span {float: left;width: 33.33%;padding-left: 10px;padding-right: 10px;}
+.info_value {margin: 0 -10px;padding-bottom: 24px;border-bottom: 2px solid #f7f7f7;}
+.info_value span {float: left;width: 33.33%;padding-left: 10px;padding-right: 10px;}
+.value_name {color: #F5A623;font-family: Roboto;font-size: 14px;font-weight: 500;line-height: 16px;}
+.value_bal {color: #000000;font-family: Roboto;font-size: 14px;font-weight: 500;line-height: 16px;}
+.value_up_down {color: #37DB8E;font-family: Roboto;font-size: 14px;font-weight: 500;line-height: 16px;}
+.info_value.last_value {padding-top: 24px;}
+.token_btn a:last-child {margin-bottom: 0;}
+.token_btn a {border-radius: 4px;background-color: #1875F0;display: inline-block;width: 100%;text-transform: uppercase;color: #FFFFFF;font-family: Roboto;font-size: 12px;font-weight: bold;line-height: 14px;text-align: center;padding: 12px 0;margin-bottom: 16px;}
+.token_btn {margin-top: 16px;}
+.graph_img_token img {width: 100%;height: 216px;}
+.form_tab_search span {display: inline-block;vertical-align: middle;margin-right: 8px;position: relative;top: 1px;}
+.form_tab_search span svg {height: 15px;width: 15px;fill: #297ff1;}
+.form_tab_search input::-webkit-input-placeholder {color: #bfbfbf;}
+.form_tab_search input::-moz-placeholder {color: #bfbfbf;}
+.form_tab_search input:-ms-input-placeholder {color: #bfbfbf;}
+.form_tab_search input:-moz-placeholder {color: #bfbfbf;}
+.head_tab_content {position: relative;margin: 0;background: #fff;padding: 24px;border-radius: 4px;}
+.portfolio_tab_content {margin-top: 24px;}
+.head_tab_content h6 {color: #4A4A4A;font-family: Roboto;font-size: 16px;font-weight: 500;line-height: 22px;margin: 0;padding: 0;float: left;    text-transform: uppercase;width: 33.33%;}
+.form_tab_search input:focus {border: 0;outline: 0;border-bottom: 2px solid #297ff1;opacity: 1;width: 180px;}
+.form_tab_search input {border: 0;padding: 0;background: transparent;color: #fff;box-shadow: none;height: auto;width: auto;opacity: 1;color: #bfbfbf;font-family: Roboto;font-size: 16px;font-weight: 400;line-height: 24px;width: 60px;    transition: ease-in-out .4s;    height: 24px;}
+.form_tab_search {float: right;}
+.form_tab_search {float: right;z-index: 9;position: relative;width: 33.33%;    text-align: right;}
+.tab_head.tab_head_portfolio {position: relative;background: transparent;text-align: center;left: 0;top: 0;float: left;width: 33.33%;}
+.tab_head.tab_head_portfolio li {width: auto;float: none;display: inline-block;box-shadow: none;}
+.tab_head.tab_head_portfolio li a {opacity: 0.25;color: #000000;font-family: Roboto;font-size: 16px;font-weight: 500;line-height: 24px;padding: 0px 16px;border: 0;    text-transform: uppercase;}
+.tab_head.tab_head_portfolio li.current_active a:After {box-shadow: none;border-bottom: 4px solid #1875F0;bottom: -24px;}
+.tab_head.tab_head_portfolio li.current_active a {color: #000000;opacity: 1;}
+.tab_content_portfolio {margin-top: 8px;background: #fff;    margin-bottom: 24px;}
+.table.table_ireo tbody tr td {border: 0;padding: 16px 24px;color: #000000;font-family: Roboto;font-size: 14px;line-height: 16px;font-weight: 500;    vertical-align: middle;}
+.table.table_ireo thead tr th {opacity: 0.25;color: #000000;font-family: Roboto;font-size: 12px;font-weight: 500;line-height: 14px;border: 0;border-bottom: 2px solid #f7f7f7;padding: 16px 24px;text-transform: uppercase;}
+.table.table_ireo {margin: 0;padding: 0;border: 0;}
+.btn_set {float: right;border: 2px solid #c6ddfc;border-radius: 4px;background: #fff;color: #1875F0;font-family: Roboto;font-size: 11px;font-weight: 500;display: inline-block;padding: 6px 12px;text-align: center;text-transform: uppercase;line-height: normal;}
+.pending_status {color: #1875F0;font-family: Roboto;font-size: 14px;line-height: 16px;font-weight: 400;margin-top: 8px;display: inline-block;}
+.pending_status.in_process {color: #F5A623;}
+.pending_status.falied {color: #FF5E57;}
+.pending_status.rejected {color: #FF5E57;}
+.table.table_ireo tbody tr td > span {padding: 8px 0;display: inline-block;}
+
+
+/*** LiquidRe–All-IREOs ***/
+.panel_ireos {padding: 24px;background: #fff;border-radius: 4px;}
+.haed_initial h2 {color: #4A4A4A;font-family: Roboto;font-size: 20px;font-weight: bold;line-height: 26px;margin: 0;text-transform: uppercase;}
+.haed_initial {float: left;width: 37%;}
+.tab_list_all .tab_head.tab_head_portfolio {float: none;width: 100%;}
+.tab_list_all {float: left;width: 37%;}
+.tab_list_all .tab_head.tab_head_portfolio li.current_active a:After {bottom: -31px;}
+.panel_ireo_btn a {display: inline-block;border: 2px solid #c6ddfc;border-radius: 4px;color: #1875F0;font-family: Roboto;font-size: 11px;font-weight: 500;line-height: 11px;text-align: center;text-transform: uppercase;padding: 8px 16px;}
+.panel_ireo_btn {float: left;width: 26%;text-align: right;}
+.detail_firm_offer {margin-top: 24px;}
+.detail_firm_offer ul {padding: 0;margin: 0;list-style: none;}
+.detail_firm_offer ul li {padding: 24px;background: #fff;margin-bottom: 24px;}
+.profile_o {position: absolute;top: 0;left: 0;}
+.profile_o span {height: 160px;width: 240px;border-radius: 2px;display: inline-block;    background: #f9f9f9;}
+.profile_o span img {height: 100%;width: 100%;border-radius: 2px;}
+.li_offer_data_content {position: relative;padding-left: 264px;min-height: 160px;}
+.left_o h6 {color: #000000;font-family: Roboto;font-size: 18px;font-weight: 500;line-height: 21px;margin: 0 0 16px 0;padding: 0;}
+.left_o h5 {color: #1875F0;font-family: Roboto;font-size: 16px;font-weight: 500;line-height: 24px;margin: 0px 0 24px 0;padding: 0;}
+.simple_para {color: #000000;font-family: Roboto;font-size: 16px;font-weight: 500;line-height: 24px;margin: 0 0 16px 0;}
+.simple_para span {color: #1875F0;margin-left: 8px;}
+.rating_para > span {color: #000000;font-family: Roboto;font-size: 16px;font-weight: 500;line-height: 24px;}
+.rating_para .div_rating {display: inline-block;margin-left: 8px;}
+.left_o {width: 40%;float: left;}
+.right_o {float: left;width: 60%;}
+.inner_inner_detail {position: relative;padding-right: 266px;min-height: 49px;margin: 0 0 36px 0;}
+.date_show {border: 2px solid #c6ddfc;border-radius: 2px;background-color: #FFFFFF;width: 253px;position: absolute;top: 0;right: 0;}
+.date_show span {padding: 8px 14px;float: left;color: #1875F0;font-family: Roboto;font-size: 18px;font-weight: 500;line-height: 21px;text-align: center;text-transform: uppercase;border-right: 2px solid #c6ddfc;}
+.date_show span a {display: block;color: #1875F0;font-family: Roboto;font-size: 9px;font-weight: 500;line-height: 10px;text-transform: uppercase;}
+.date_show span:last-child {border-right: 0;}
+.progress_status label a .data_fund {color: #000000;font-family: Roboto;font-size: 16px;font-weight: 500;line-height: 19px;text-align: right;opacity: 1;}
+.progress_status label a .data_user {color: #000000;font-family: Roboto;font-size: 16px;font-weight: 500;line-height: 19px;opacity: 1;vertical-align: middle;margin-right: 16px;}
+.progress_status.progress_status_offer label a {float: right;}
+.progress_status.progress_status_offer .progress_bar {width: 100%;}
+.progress_status.progress_status_offer label {width: 100%;}
+.progress_status label a .data_user svg {margin-left: 5px;position: relative;}
+.img_map img {width: 100%;border-radius: 2px;}
+.map_bg_white {background: #fff;margin-top: 24px;padding: 24px;}
+.map_popup {max-width: 220px;position: absolute;top: 44%;background: #fff;border-radius: 4px;left: 40%;transform: translate(-50%,-50%);box-shadow: 0 0 5px 0 rgba(0,0,0,0.15);}
+.map_img_add {position: relative;}
+.img_map img {width: 100%;border-radius: 2px;}
+.btn_map {position: absolute;bottom: 16px;left: 0;width: 100%;text-align: center;}
+.btn_map a {color: #FFFFFF;font-family: Roboto;font-size: 14px;font-weight: 500;border-radius: 4px;background-color: #1875F0;line-height: 16px;padding: 6px 12px;display: inline-block;}
+.map_popup h2 {color: #000000;font-family: Roboto;font-size: 16px;font-weight: 500;line-height: 22px;padding: 0 16px;margin: 16px 0 8px 0;}
+.map_popup .rating_para {padding: 0 16px;margin: 0 0 8px 0;}
+.map_popup .rating_para > span {color: #000000;font-family: Roboto;font-size: 14px;font-weight: 500;line-height: 22px;}
+.map_popup .simple_para {color: #000000;font-family: Roboto;font-size: 14px;font-weight: 500;line-height: 22px;padding: 0 16px;margin: 0 0 8px 0;}
+.map_popup .progress_status.progress_status_offer {padding: 0 16px 16px 16px;}
+.map_popup .progress_status.progress_status_offer label {color: #000000;font-family: Roboto;font-size: 12px;font-weight: 500;line-height: 14px;}
+.map_popup .progress_status.progress_status_offer label span {opacity: 0.6;color: #000000;font-family: Roboto;font-size: 12px;font-weight: 500;
+line-height: 14px;}
+.map_popup .progress_status.progress_status_offer label a .data_fund {opacity: 1;color: #000000;font-family: Roboto;font-size: 12px;font-weight: 500;line-height: 14px;}
+.img_map {position: relative;}
+
+
+/*** LiquidRe–IREO-Listing page ***/
+.listing_l {width: 70%;float: left;padding-left:15px;padding-right:15px;}
+.listing_r {float: left;width: 30%;padding-left:15px;padding-right:15px;}
+.listing_share {margin: 24px -15px 0;}
+.first_left_listing {background: #fff;padding: 24px 24px 0px 24px;border-radius: 4px;margin-bottom: 24px;    border-radius: 4px;}
+.play {height: 321px;width: 100%;border-radius: 4px;background-color: #F1F1F1;position: relative;}
+.ul_btn {padding: 0;margin: 0;list-style: none;text-align: center;position: absolute;width: 100%;bottom: 32px;left: 0;}
+.ul_btn li {display: inline-block;vertical-align: top;line-height: 100%;padding: 0 15px;}
+.ul_btn li a {display: inline-block;vertical-align: top;line-height: 100%;}
+.first_left_listing .progress_status.progress_status_offer {margin-top: 24px;margin-bottom: 24px;}
+.first_left_listing .progress_bar .completed_p {height: 24px;}
+.first_left_listing .progress_bar {height: 24px;}
+.ul_list_wrapper li {float: left;width: 35%;margin-bottom: 24px;}
+.ul_list_wrapper {padding: 0;margin: 0;list-style: none;}
+.ul_list_wrapper li .simple_para {margin: 0;}
+.second_left_listing {background: #fff;padding: 24px;    border-radius: 4px;    margin-bottom: 24px;}
+.head_h6 {color: #4A4A4A;font-family: Roboto;font-size: 16px;font-weight: 500;line-height: 22px;text-transform: uppercase;margin: 0 0 24px 0;}
+.seller_error_msg {text-align: center;color: #FF5E57;font-family: Roboto;font-size: 14px;font-weight: 500;line-height: 24px;text-transform: uppercase;margin: 0 0 24px 0;}
+.seller_error_msg svg {vertical-align: top;margin-right: 16px;}
+.btn_request {text-align: center;}
+.btn_request a {border: 2px solid #c6ddfc;border-radius: 4px;background-color: #FFFFFF;color: #1875F0;font-family: Roboto;font-size: 12px;font-weight: bold;line-height: 14px;text-align: center;text-transform: uppercase;padding: 12px 32px;display: inline-block;}
+.third_left_listing {background: #fff;padding: 24px;border-radius: 4px;margin-bottom: 24px;}
+.graph_list img {width: 100%;}
+.graph_list {margin-bottom: 24px;}
+.ul_graph_detail li {float: left;width: 33.33%;padding-left: 15px;padding-right: 15px;color: #000000;font-family: Roboto;font-size: 16px;line-height: 19px;font-weight: 500;    position: relative;}
+.ul_graph_detail {padding: 0;margin: 0;list-style: none;}    
+.ul_graph_detail li span {margin-left: 5px;}  
+.li_grn span {color: #37DB8E;}
+.li_red span {color: #FF5E57;}
+.ul_graph_detail li.li_grn:After {content: " ";background: #37DB8E;width: 6px;height: 6px;top: 6px;left: 0px;position: absolute;border-radius: 50%;}
+.ul_graph_detail li.li_red:After {content: " ";background: #FF5E57;width: 6px;height: 6px;top: 6px;left: 0px;position: absolute;border-radius: 50%;}
+.ul_graph_detail li.li_black:After {content: " ";background: #000;width: 6px;height: 6px;top: 6px;left: 0px;position: absolute;border-radius: 50%;}
+.forth_left_listing {background: #fff;padding: 24px;border-radius: 4px;    margin-bottom: 24px;}
+.right_side {float: right;opacity: 0.25;color: #4A4A4A;font-family: Roboto;font-size: 14px;font-weight: 500;line-height: 18px;text-align: right;text-transform: uppercase;margin-top: 5px;}
+.comment_box_inner {position: relative;padding-left: 104px;min-height: 80px;}
+.comment_pic {position: absolute;left: 0;top: 0;}
+.comment_box_inner textarea {border: 2px solid #eaeaea;border-radius: 4px;background-color: #FFFFFF;width: 100%;height: 80px;color: #c1c1c1;font-family: Roboto;font-size: 14px;line-height: 16px;padding: 10px;}
+.text_btn .a_comment {color: #1875F0;font-family: Roboto;font-size: 12px;font-weight: bold;line-height: 14px;text-transform: uppercase;text-align: center;border-radius: 4px;background-color: #FFFFFF;border: 2px solid #c6ddfc;padding: 12px 32px;display: inline-block;}
+.text_btn {text-align: right;margin-top: 24px;}
+.comment_pic span {display: inline-block;height: 80px;width: 80px;border-radius: 4px;background-color: #ECECEC;}
+.comment_area_action {padding-bottom: 24px;border-bottom: 2px solid #f1f1f1;    margin-bottom: 24px;}
+.social {padding-left: 104px;}
+.social .thumb_down {margin-right: 8px;position: relative;top: 4px;margin-top: 0;display: inline-block;vertical-align: middle;}
+.thumb_up {margin-right: 8px;display: inline-block;vertical-align: middle;}
+.reply_click {color: #1875F0;font-family: Roboto;font-size: 12px;font-weight: 500;line-height: 16px;margin-left: 8px;display: inline-block;vertical-align: middle;text-transform: uppercase;}
+.reply_click svg {margin-left: 5px;}
+.comment_box_inner p {color: #000000;font-family: Roboto;font-size: 13px;line-height: 24px;}
+.commnet_head span {opacity: 0.5;color: #000000;font-family: Roboto;font-size: 14px;line-height: 22px;float: right;text-transform: uppercase;}
+.commnet_head {color: #4A4A4A;font-family: Roboto;font-size: 16px;font-weight: 500;line-height: 22px;text-transform: uppercase;margin: 0 0 24px 0;}
+.reply_comment {padding-bottom: 24px;border-bottom: 2px solid #f1f1f1;margin-bottom: 24px;}
+.reply_comment:last-child {border: 0;padding-bottom: 0;margin-bottom: 0;}
+.right_head {color: #4A4A4A;font-family: Roboto;font-size: 16px;font-weight: 500;line-height: 22px;text-transform: uppercase;margin: 0 0 22px 0;}
+.buy_share_wrapper {background: #fff;padding: 24px;border-radius: 4px;margin-bottom: 24px;}
+.right_textholder:After {content: "TPEG";position: absolute;right: 10px;top: 15px;color: #1875F0;font-family: Roboto;font-size: 12px;font-weight: 500;line-height: 14px;}
+.right_textholder {position: relative;}
+.input_custom .right_textholder input {padding-right: 40px;}
+.place_btn a {color: #FFFFFF;font-family: Roboto;font-size: 12px;font-weight: bold;line-height: 39px;text-align: center;height: 38px;border-radius: 4px;background-color: #1875F0;width: 100%;text-transform: uppercase;display: inline-block;}
+.com_detail {position: relative;padding-left: 96px;min-height: 80px;margin-bottom: 24px;}
+.profile_pic_custom {position: absolute;top: 0;left: 0;}
+.profile_pic_custom span {height: 80px;width: 80px;border-radius: 4px;background-color: #ECECEC;display: inline-block;}
+.com_detail p {color: #000000;font-family: Roboto;font-size: 16px;font-weight: 500;line-height: 22px;margin: 0 0 8px 0;}
+.place_btn.trust_btn a {background: transparent;border: 2px solid #c6ddfc;color: #1875F0;line-height: 35px;}
+.place_btn.trust_btn {margin-top: 24px;}
+.vertical_text_center {height: 80px;vertical-align: middle;display: table-cell;}
+.buy_share_wrapper .input_custom input::-webkit-input-placeholder {color: #000;}
+.buy_share_wrapper .input_custom input::-moz-placeholder {color: #000;}
+.buy_share_wrapper .input_custom input:-ms-input-placeholder {color: #000;}
+.buy_share_wrapper .input_custom input:-moz-placeholder {color: #000;}
+
+/*** LiquidRe–IREO-Listing-Seller page ***/
+.seller_info_msg svg {vertical-align: top;margin-right: 16px;}
+.seller_info_msg {text-align: center;color: #1875F0;font-family: Roboto;font-size: 14px;font-weight: 500;line-height: 24px;text-transform: uppercase;margin: 0 0 24px 0;}
+
+
+/*** LiquidRe–IREO-Listing-Due-Diligence-Completed page ***/
+.view_content {position: relative;padding-right: 106px;margin-bottom: 32px;}
+.content_shown {border: 2px solid #e8f1fe;height: 48px;padding: 15px;background: #fff;border-radius: 4px;color: #000000;font-family: Roboto;font-size: 14px;line-height: 16px;}
+.content_shown svg {margin-right: 16px;vertical-align: top;}
+.view_custom {color: #1875F0;font-family: Roboto;font-size: 14px;font-weight: 500;height: 48px;line-height: 16px;display: inline-block;padding: 16px 24px;text-transform: uppercase;border: 2px solid #8cbaf8;border-radius: 4px;position: absolute;right: 0;top: 0;}
+.second_left_listing.second_left_complete p {color: #000000;font-family: Roboto;font-size: 16px;font-weight: 500;line-height: 24px;margin-bottom: 16px;}
+
+/****LiquidRe–IREO-Listing-Due-Diligence-Request-Documents page  **/
+.pop_sell.pop_request_doc .modal-dialog {width: 844px;}
+.pop_sell.pop_request_doc .modal-dialog .modal-content .modal-header {padding: 48px 72px;}
+.pop_sell.pop_request_doc h4.modal-title {color: #4A4A4A;font-family: Roboto;font-size: 24px;font-weight: bold;line-height: 34px;text-align: center;}
+.pop_request_doc .modal_custom {padding: 0 72px;}
+.pop_request_doc .input_custom {margin-bottom: 0;}
+.pop_request_doc .btn_cstm_submit {padding: 48px 72px;}
+.pop_request_doc .btn_cstm_submit a {padding: 14px 56px;}
+
+
+/**** LiquidRe–IREO-Listing-Due-Diligence-Physical-View page  **/
+.portfolio_head.portfolio_phsical_panel {margin-bottom: 24px;}
+.panel_due .panel_ireo_btn a {color: #FFFFFF;font-family: Roboto;font-size: 12px;font-weight: bold;line-height: 14px;text-align: center;border: none;border-radius: 4px;padding: 12px 24px;background-color: #1875F0;}
+.panel_due .tab_list_all .tab_head.tab_head_portfolio {margin-top: 7px;}
+.panel_due .haed_initial h2 {margin-top: 4px;}
+.panel_due .haed_initial, .panel_due .tab_list_all, .panel_due .panel_ireo_btn {width: 33.33%;}
+.video_content_first {float: left;width: 50%;padding-left: 15px;padding-right: 15px;}
+.video_content_row {margin: 24px -15px 24px -15px;}
+.video_play_btn span {display: inline-block;position: absolute;left: 50%;top: 50%;transform: translate(-50%,-50%);}
+.video_play_btn {height: 320px;width: 100%;border-radius: 4px;background-color: #F1F1F1;position: relative;    margin-bottom: 24px;}
+.inner_v_content {background: #fff;padding: 24px;border-radius: 4px;}
+.inner_v_content p {color: #000000;font-family: Roboto;font-size: 13px;line-height: 24px;margin: 0;}
+.inner_v_content h6 {color: #000000;font-family: Roboto;font-size: 16px;font-weight: 500;line-height: 24px;margin: 0 0 8px 0;}
+.doc_title h6 span {opacity: 0.25;color: #4A4A4A;font-family: Roboto;font-size: 16px;font-weight: 500;line-height: 22px;float: right;}
+.doc_title h6 {color: #4A4A4A;font-family: Roboto;font-size: 16px;font-weight: 500;line-height: 22px;margin: 0;text-transform: uppercase;}
+.doc_pdf_file {background: #fff;padding: 24px 24px 0px 24px;border-radius: 4px;    margin-bottom: 24px;}
+.doc_title {margin-bottom: 24px;}
+.doc_content {margin: 0 -15px;}
+.col_50 {padding: 0 15px;width: 50%;float: left;margin: 0 0 24px 0;}
+.file_size {float: right;color: #1875F0;font-family: Roboto;font-size: 14px;font-weight: 500;line-height: 16px;text-align: right;}
+.doc_content .content_shown a {background: #fff;border-radius: 4px;color: #000000;font-family: Roboto;font-size: 14px;line-height: 16px;}
+.doc_gallery {background: #fff;padding: 24px;border-radius: 4px;margin-bottom: 24px;}
+.gallery_slider .flex-viewport {margin-bottom: 24px;}
+.gallery_slider .flex-control-thumbs li {width: 20%;margin: 0;padding: 0 12px;}
+.gallery_slider .flex-control-thumbs {margin: 0;}
+.gallery_slider .flexslider {margin: 0;border: 0;}
+.gallery_slider ul.flex-direction-nav {display: none;}
+.gallery_slider .flex-control-thumbs {margin: 0;overflow: visible;position: relative;bottom: 0;}
+
+
+/*** LiquidRe–Seller-Public-Profile–Edit ***/
+.upload_section_investor > p {color: #000000;font-family: Roboto;font-size: 18px;line-height: 34px;text-align: center;margin: 0 0 48px 0;}
+.upload_section_investor h2 {color: #4A4A4A;font-family: Roboto;font-size: 24px;font-weight: bold;line-height: 34px;text-align: center;text-transform: uppercase;margin: 0 0 16px 0;}
+.upload_section_investor {background: #fff;border-radius: 4px;padding: 48px 72px;    margin-bottom: 24px;}
+.file-btn.file_btn_explore {height: 64px;width: 405px;    margin-bottom: 48px;}
+.pdf_editor_custom {display: inline-block;width: 100%;text-align: center;margin-bottom: 24px;}
+.pdf_editor_custom .content_shown {display: inline-block;vertical-align: top;max-width: 451px;width: 100%;text-align: left;}
+.pdf_btn_viwer {display: inline-block;vertical-align: top;}
+.rename_input {color: #1875F0;font-family: Roboto;font-size: 14px;font-weight: 500;border: 2px solid #8cbaf8;border-radius: 4px;height: 48px;display: inline-block;vertical-align: middle;width: 104px;text-align: center;text-transform: uppercase;line-height: 45px;margin-left: 24px;}
+.pdf_editor_custom:last-child {margin-bottom: 0;}
+.input_page_change {margin: 0 -15px;padding-left: 48px;padding-right: 48px;    padding-bottom: 24px;}
+.input_page_change .input_custom input::-webkit-input-placeholder {color: #000;}
+.input_page_change .input_custom input::-moz-placeholder {color: #000;}
+.input_page_change .input_custom input:-ms-input-placeholder {color: #000;}
+.input_page_change .input_custom input:-moz-placeholder {color: #000;}
+.add_profile_info {color: #1875F0;font-family: Roboto;font-size: 14px;font-weight: 500;line-height: 16px;display: inline-block;padding: 14px 32px;border: 2px solid #8cbaf8;border-radius: 4px;text-transform: uppercase;}
+.add_profile_info_detail {text-align: center;}
+
+/*** LiquidRe–Seller-Public-Profile–Edit ***/
+.dropdown.drop_detail_custom button.btn.btn-primary {border: 2px solid #8cbaf8;color: #1875F0;font-family: Roboto;font-size: 14px;font-weight: 500;line-height: 17px;background: transparent;text-transform: uppercase;padding: 14px 16px;width: 100%;text-align: left;}
+.drop_detail_custom svg {float: right;position: relative;top:2px;}
+.pop_sell.pop_detail_fill .modal-dialog {width: 844px;}
+.pop_sell.pop_detail_fill h4.modal-title {color: #4A4A4A;font-family: Roboto;font-size: 24px;font-weight: bold;line-height: 34px;text-align: center;}
+.pop_sell.pop_detail_fill .modal-dialog .modal-content .modal-header {padding: 48px 72px;}
+.pop_detail_fill .modal_custom {padding: 0 72px;}
+.col_custom_half {margin: 0px;}
+.drop_detail_custom:nth-child(2n+2) {margin-right: 0;margin-left: 2%;}
+.drop_detail_custom {float: left;width: 48%;padding-left: 0;padding-right: 0;margin-bottom: 24px;margin-right: 2%;}
+.drop_detail_custom .dropdown-menu {left: 0;width: 100%;border: 2px solid #8cbaf8;}
+.drop_detail_custom.selected_dropdown button.btn.btn-primary {border: 2px solid #ddebfd;}
+.selected_dropdown .non_select_drop {display: none;}
+.create_detail_wrapper h2 {color: #4A4A4A;font-family: Roboto;font-size: 24px;font-weight: bold;line-height: 34px;text-align: center;text-transform: uppercase;margin: 0 0 32px 0;}
+.create_detail_wrapper {margin-top: 24px;}
+.create_detail_wrapper .input_page_change .input_custom input::-webkit-input-placeholder {color: #bfbfbf;}
+.create_detail_wrapper .input_page_change .input_custom input::-moz-placeholder {color: #bfbfbf;}
+.create_detail_wrapper .input_page_change .input_custom input:-ms-input-placeholder {color: #bfbfbf;}
+.create_detail_wrapper .input_page_change .input_custom input:-moz-placeholder {color: #bfbfbf;}
+.create_detail_wrapper .input_page_change {margin: 0 -12px;padding-left: 0;padding-right: 0;    padding-bottom: 0;}
+.create_detail_wrapper .input_page_change .col_50 {padding: 0 12px;}
+.input_custom_add_btn {position: relative;padding-right: 100px;}
+.add_click_info {position: absolute;right: 0;top: 22px;border: 2px solid #8cbaf8;border-radius: 4px;height: 44px;width: 76px;color: #1875F0;font-family: Roboto;font-size: 14px;font-weight: 500;line-height: 41px;text-align: center;text-transform: uppercase;}
+.add_profile_class {text-align: center;padding-top: 24px;padding-bottom: 48px;}
+.add_profile_class a {border-radius: 4px;background-color: #1875F0;color: #FFFFFF;font-family: Roboto;font-size: 14px;font-weight: bold;line-height: 16px;text-transform: uppercase;padding: 14px 48px;display: inline-block;}
+
+
+
+/**** LiquidRe – IREO Listing - PDF Preview ***/
+.pop_sell.pop_legal_notice.pop_legal_notice_second .modal-dialog {width: 639px;}
+.pop_sell.pop_legal_notice.pop_legal_notice_second .modal-dialog .modal-content .modal-header button.close {top: 32px;}
+.pop_sell.pop_legal_notice.pop_legal_notice_second .modal-dialog .modal-content .modal-header h4.modal-title {color: #4A4A4A;font-family: Roboto;font-size: 24px;font-weight: bold;line-height: 34px;text-align: center;}
+.pop_sell.pop_legal_notice.pop_legal_notice_second .modal_custom {padding: 0 72px;}
+.pop_legal_notice_second .notice_custom_btn {padding: 48px 72px;}
+.pop_sell.pop_legal_notice_second .modal-dialog .modal-content .modal-header {padding: 48px 40px;}
+
+
+
+
+/** LiquidRe–All-Sellers-Search **/
+.portfolio_tab_content.portfolio_tab_content_Search {margin-top: 0;}
+.table.table_ireo tbody tr td > span.div_rating > span svg{width: 10px;height: 10px;}
+.table.table_ireo tbody tr td > span.div_rating {margin-left: 12px;}
+
+
+/** LiquidRe–New-IREO-Property-Info **/
+.progress_status.progress_short label {margin: 0;display: inline-block;vertical-align: middle;color: #000000;font-family: Roboto;font-size: 14px;font-weight: 500;line-height: 16px;text-align: right;margin-right: 16px;text-transform: uppercase;}
+.progress_status.progress_short .progress_bar {display: inline-block;vertical-align: middle;height: 10px;    width: 100px;}
+.progress_status.progress_short .progress_bar .completed_p {height: 10px;vertical-align: top;    width: 80px;}
+.portfolio_IREO_Property .edit_profile_div {margin-top: 4px;}
+.pro_info {color: #4A4A4A;font-family: Roboto;font-size: 18px;font-weight: bold;line-height: 28px;text-align: center;
+text-transform: uppercase;margin: 0 0 32px 0;}
+.Property_Information_ireo {padding: 48px 120px;background: #fff;margin-top: 24px;margin-bottom: 24px;}
+.col_33 {float: left;width: 33.33%;padding-left: 15px;padding-right: 15px;}
+.info_first {margin: 0 -15px;}
+
+.radio_custom label {color: #000000;font-family: Roboto;font-size: 14px;font-weight: 400;margin: 0;line-height: 16px;}
+.radio_custom [type="checkbox"]:not(:checked),
+.radio_custom [type="checkbox"]:checked {position: absolute;left: -9999px;}
+.radio_custom [type="checkbox"]:not(:checked) + label,
+.radio_custom [type="checkbox"]:checked + label {position: relative;padding-left: 26px;cursor: pointer;}
+.radio_custom [type="checkbox"]:not(:checked) + label:before, [type="checkbox"]:checked + label:before {content: '';position: absolute;left: 0;top: 0;width: 16px;height: 16px;border: 2px solid #dbdbdb;background: #fff;border-radius: 50%;box-shadow: none;}
+.radio_custom [type="checkbox"]:not(:checked) + label:after, [type="checkbox"]:checked + label:after {content: '';position: absolute;top: 4px;left: 4px;line-height: 10px;transition: all .2s;height: 8px;width: 8px;border-radius: 50%;background: #1875f0;}
+.radio_custom [type="checkbox"]:not(:checked) + label:after {opacity: 0;transform: scale(0);}
+.radio_custom [type="checkbox"]:checked + label:after {opacity: 1;transform: scale(1);}
+
+.info_first .radio_custom {margin-bottom: 24px;}
+.radio_custom.top_mar {margin-top: 12px;}
+.info_first .radio_custom:last-child {margin-bottom: 0;}
+.date_calender span {position: absolute;right: 15px;top: 14px;}
+.date_calender, .drop_down_cstm {position: relative;}
+.drop_down_cstm span {position: absolute;right: 15px;top: 12px;}
+.info_first .input_custom input::-webkit-input-placeholder,.form_custom .input_custom input::-webkit-input-placeholder {color: #000;}
+.info_first .input_custom input::-moz-placeholder,.form_custom .input_custom input::-moz-placeholder {color: #000;}
+.info_first .input_custom input:-ms-input-placeholder,.form_custom .input_custom input:-ms-input-placeholder {color: #000;}
+.info_first .input_custom input:-moz-placeholder,.form_custom .input_custom input:-moz-placeholder {color: #000;}
+.input_custom select{border: 2px solid #EAEAEA;border-radius: 4px;background-color: #FFFFFF;width: 100%;height: 44px;padding: 0 10px;margin: 0;color: #c1c1c1;font-family: Roboto;font-size: 14px;line-height: 16px;-moz-appearance: none;appearance: none;-webkit-appearance: none;}
+.info_first .input_custom select {color: #000;}
+.form_custom {margin: 0 -15px;padding-top: 48px;padding-bottom:72px;}
+.form_custom .input_custom {margin-bottom: 0;}
+.form_custom .input_custom select{color:#000;}
+.form_custom .input_custom textarea {height: 64px;    color: #000;}
+.input_custom.last_upload_legal label {opacity: 0;}
+.upload-btn {padding: 0;position: relative;margin: 0;display: block;border: 0px solid #72c2d4;width: 100%;}
+.upload-btn .up_btn {box-shadow: none;margin-right: 0;float: none;display: block;border: 2px solid #c6ddfc;border-radius: 4px;background-color: #FFFFFF;width: 100%;height: 44px;padding: 13px 10px;margin: 0;color: #1875F0;font-family: Roboto;font-size: 14px;line-height: 16px;text-transform: uppercase;}
+.upload-btn .up_text {color: #1a5876;display: inline-block;font-size: 13px;overflow: hidden;position: relative;text-overflow: ellipsis;top: 0;vertical-align: top;white-space: nowrap;width: 130px;left: 0;float: none;padding: 10px 5px;vertical-align: middle;font-family: open sans;}
+.upload-btn input[type=file] {position: absolute;top: 0;bottom: 0;left: 0;right: 0;opacity: 0;cursor: pointer;}
+.upload-btn .up_btn b {font-weight: normal;float: right;}
+.input_custom label span.verify_add {top: 0;vertical-align: middle;float: right;margin: 0;color: #05C46B;font-family: Roboto;font-size: 12px;line-height: 14px;font-weight: 500;}
+.input_custom label span.verify_add b {margin-left: 8px;position: relative;top: 1px;}
+.form_custom .add_profile_info_detail {clear: both;margin-top: 24px;display: inline-block;width: 100%;}
+.property_embed_link .input_custom input::-webkit-input-placeholder{color: #000;}
+.property_embed_link .input_custom input::-moz-placeholder{color: #000;}
+.property_embed_link .input_custom input:-ms-input-placeholder{color: #000;}
+.property_embed_link .input_custom input:-moz-placeholder{color: #000;}
+.property_embed_link {padding-bottom: 72px;}
+.property_embed_link .input_custom {margin-bottom: 0;}
+.upload-btn-cstm {padding: 0;position: relative;margin: 0;border: 0px solid #72c2d4;float: left;width: 20%;padding-left: 15px;padding-right: 15px;}
+.upload-btn-cstm .up_btn {box-shadow: none;margin-right: 0;float: none;display: block;border: 2px solid #EAEAEA;border-radius: 4px;height: 90px;background-color: #FFFFFF;text-align: center;line-height: 91px;}
+.upload-btn-cstm input[type=file] {position: absolute;top: 0;bottom: 0;left: 0;right: 0;opacity: 0;cursor: pointer;width:100%;}
+.add_pic {padding-bottom: 72px;}
+.p_trutee {color: #000000;font-family: Roboto;font-size: 14px;line-height: 24px;text-align: center;font-weight: 500;margin:0 0 5px 0;}
+.Choose_Trustee_wrapper .pro_info {margin-bottom: 8px;}
+.sorting_div select {border: 2px solid #c6ddfc;border-radius: 4px;background-color: #FFFFFF;color: #000000;font-family: Roboto;font-size: 12px;line-height: 14px;font-weight: 500;width: 133px;height: 30px;padding: 0 6px;-webkit-appearance: none;}
+.sorting_div p {display: inline-block;opacity: 0.5;color: #000000;font-family: Roboto;font-size: 12px;font-weight: 500;line-height: 14px;text-transform: uppercase;margin: 0 16px 0 0px;vertical-align: middle;}
+.slider_cstm .sorting_div {float: left;}
+.nav_btn_slider {float: right;}
+.relative_div {display: inline-block;vertical-align: middle;}
+.relative_div span {position: absolute;right: 10px;top: 6px;}
+.relative_div {display: inline-block;vertical-align: middle;position: relative;}
+.add_pic_wrapper {margin: 0 -15px;}
+.nav_btn_slider a {vertical-align: top;display: inline-block;height: 100%;line-height: 100%;}
+.slider_cstm {margin-top: 32px;}
+.ul_slider_content ul {padding: 0;list-style: none;margin: 0 -15px;}
+.ul_slider_content ul li {float: left;width: 20%;padding-left: 15px;padding-right: 15px;}
+.trutee_detail h6 {color: #000000;font-family: Roboto;font-size: 14px;line-height: 18px;text-align: center;font-weight: 500;margin: 0 0 8px 0;}
+.t_profile {margin-bottom: 16px;}
+.t_profile span {height: 40px;width: 40px;border-radius: 4px;background-color: #ECECEC;display: inline-block;}
+.trutee_detail {border: 2px solid #EAEAEA;border-radius: 4px;background-color: #FFFFFF;text-align: center;padding: 24px;}
+.ul_slider_content {margin-top: 32px;margin-bottom: 32px;}
+.register_trust a {color: #FFFFFF;font-family: Roboto;font-size: 14px;font-weight: bold;line-height: 16px;border-radius: 4px;background-color: #1875F0;padding: 14px 24px;display: inline-block;text-transform: uppercase;}
+.register_trust {text-align: center;}
+.para_t {color: #000000;font-family: Roboto;font-size: 14px;line-height: 24px;text-align: center;margin: 0 0 16px 0;font-weight: 500;}
+.Choose_Trustee_wrapper {padding-bottom: 72px;}
+.Due_Diligence_wrapper .pro_info {margin: 0 0 8px 0;}
+.Due_Diligence_wrapper .p_trutee {margin-bottom: 32px;}
+
+
+
+.current_c_add {border: 2px solid #c6ddfc;border-radius: 4px;background: #fff;padding: 24px;}
+.com_text {float: left;}
+.com_text h2 {color: #000000;font-family: Roboto;font-size: 16px;font-weight: 500;margin: 0 0 8px 0;line-height: 22px;}
+.com_text h6 {color: #000000;font-family: Roboto;font-size: 16px;line-height: 22px;margin: 0 0 8px 0;}
+.com_text p {color: #1875F0;font-family: Roboto;font-size: 16px;line-height: 22px;margin: 0 0 8px 0;}
+.com_text p span {margin-right: 16px;}
+.com_text p.close_soon {color: #F5A623;font-family: Roboto;font-size: 16px;line-height: 22px;margin: 0;}
+.com_text p.close_soon span {margin-right: 0;color: #D9D9D9;font-family: Roboto;font-size: 16px;line-height: 22px;margin-left: 8px;}
+.com_text_right {float: right;}
+.box_pop_site:first-child {margin-right: 32px;}
+.box_pop_site p {color: #1875F0;font-family: Roboto;font-size: 12px;font-weight: 500;line-height: 14px;text-align: center;text-transform: uppercase;margin: 5px 0 0 0;}
+.box_pop_site {float: left;height: 98px;width: 114px;text-align: center;border: 2px solid #e6f0fe;border-radius: 4px;padding: 24px;}
+.search_new_com .input_custom input {    padding-left: 48px;}
+.search_new_com .input_custom a {position: absolute;left: 16px;top: 15px;}
+.search_new_com .input_custom {margin: 0;position: relative;}
+.search_new_com {padding-top: 48px;}
+.search_new_com h2 {color: #4A4A4A;font-family: Roboto;font-size: 18px;font-weight: bold;line-height: 28px;text-align: center;margin: 0 0 32px 0;text-transform: uppercase;}
+.pop_detail_fill.pop_detail_current .modal_custom {padding: 0 72px 72px 72px;}
+.search_new_com .input_custom input::-webkit-input-placeholder {    text-transform: uppercase;}
+.search_new_com .input_custom input::-moz-placeholder {    text-transform: uppercase;}
+.search_new_com .input_custom input:-ms-input-placeholder {    text-transform: uppercase;}
+.search_new_com .input_custom input:-moz-placeholder {    text-transform: uppercase;}
+
+
+/*** LiquidRe–New-IREO-Due-Diligence-Physical **/
+.panel_ireos.panel_Due_Diligence {margin-top: 8px;}
+.panel_Due_Diligence .panel_ireo_btn {width: auto;float: right;}
+.panel_Due_Diligence .tab_list_all {width: auto;}
+.panel_Due_Diligence .panel_ireo_btn a {color: #FF3F34;font-family: Roboto;font-size: 10px;font-weight: 500;text-align: center;height: 27px;width: 127px;padding: 0;border: 2px solid #ffcfcd;line-height: 24px;}
+.panel_Due_Diligence .tab_list_all .tab_head.tab_head_portfolio li.current_active a:After {bottom: -27px;}
+.upload-btn-cstm_p {padding: 0;position: relative;margin: 0;display: inline-block;border: 0px solid #72c2d4;width: 100%;text-align: center;margin-bottom: 48px;margin-top: 0;}
+.upload-btn-cstm_p .up_btn {margin-right: 0;padding: 0;float: none;display: block;text-align: center;border: 2px solid #c6ddfc;border-radius: 4px;background-color: #FFFFFF;color: #1875F0;font-family: Roboto;font-size: 14px;font-weight: 500;line-height: 16px;padding: 14px 0;text-transform: uppercase;width: 131px;margin: 0 auto;}
+.upload-btn-cstm_p input[type=file] {position: absolute;top: 0;bottom: 0;left: 0;right: 0;opacity: 0;cursor: pointer;}
+.upload-btn-cstm_p input[type=file] {position: absolute;top: 0;bottom: 0;left: 0;right: 0;opacity: 0;cursor: pointer;width: 131px;margin: 0 auto;}
+.h2_due {color: #4A4A4A;font-family: Roboto;font-size: 18px;font-weight: bold;line-height: 28px;text-align: center;text-transform: uppercase;margin: 0 0 48px 0;}
+.phycial_view {padding: 48px 120px;background: #fff;margin-top: 24px;margin-bottom: 24px;    border-radius: 4px;}
+.upload-btn-cstm_p .up_btn svg {margin-right: 16px;vertical-align: top;}
+.para_text {color: #000000;font-family: Roboto;font-size: 16px;line-height: 24px;font-weight: 500;margin: 0 0 24px 0;}
+.view_content.view_content_due .view_custom {padding: 13px 24px;height: 44px;top: 22px;}
+.view_content.view_content_due {margin-bottom: 48px;}
+.content_shown.content_due {width: 239px;margin: 0 auto;}
+.content_shown.content_due {width: 239px;margin: 0 auto;color: #1875F0;font-family: Roboto;font-size: 14px;font-weight: 500;line-height: 16px;text-transform: uppercase;text-align: center;}
+.a_next {border-radius: 4px;background-color: #1875F0;border: 2px solid #1875F0;font-size: 14px;font-weight: bold;line-height: 16px;padding: 14px 32px;display: inline-block;text-transform: uppercase;color: #fff;}
+.listing_btn_wrapper .a_back {padding: 14px 32px;}
+.listing_btn_wrapper {text-align: center;margin: 48px 0 0 0;}
+
+
+/** LiquidRe – New IREO Due Diligence - Skip ****/
+.btn_sub_tall {padding-top: 48px;text-align: center;}
+.due_warning p {color: #000000;font-family: Roboto;font-size: 16px;line-height: 24px;text-align: center;font-weight: 500;}
+.due_warning h2 {color: #FF3F34;font-family: Roboto;font-size: 24px;font-weight: bold;line-height: 28px;text-align: center;text-transform: uppercase;margin: 0 0 24px 0;}
+.due_warning {background: #fff;border-radius: 4px;padding: 48px 120px;margin-top: 24px;}
+.sub_ireo {color: #1875F0;font-family: Roboto;font-size: 14px;font-weight: bold;line-height: 16px;text-transform: uppercase;padding: 14px 16px;display: inline-block;border: 2px solid #8cbaf8;border-radius: 4px;margin-right: 12px;}
+.take_ireo {color: #fff;font-family: Roboto;font-size: 14px;font-weight: bold;line-height: 16px;text-transform: uppercase;padding: 14px 16px;display: inline-block;border: 2px solid #1875F0;background-color: #1875F0;border-radius: 4px;margin-left: 12px;}
+
+/**LiquidRe – New IREO Submitted    ***/ 
+.LRET_Incom_Expense {background: #fff;padding: 34px 24px 24px 24px;border-radius: 4px;margin-bottom: 24px;}
+.post_error_ireo {border-radius: 4px;background-color: #FFFFFF;padding: 24px;margin-bottom: 24px;}
+.post_error_ireo h2 {color: #FF3F34;font-family: Roboto;font-size: 20px;font-weight: bold;line-height: 26px;text-align: center;text-transform: uppercase;margin: 0;}
+
+/**LiquidRe – IREO Fail   ***/ 
+.first_left_listing .progress_status.progress_status_offer.falied_fund {margin-top: 0;}
+.main_Purchased_Shares {background: #fff;padding: 24px 24px 24px 24px;margin-bottom: 24px;border-radius: 4px;}
+.speg_btn {text-align: center;margin-bottom: 32px;}
+.speg_btn a {color: #1875F0;font-family: Roboto;font-size: 24px;font-weight: 500;line-height: 28px;text-align: center;border: 2px solid #e8e8e8;border-radius: 4px;display: inline-block;padding: 16px;}
+
+/** /** LiquidRe – All Trustees - Search  ***/ 
+.trustee_btn_right {float: right;}
+.head_tab_content.all_trustee_search h6 {color: #4A4A4A;font-family: Roboto;font-size: 20px;font-weight: bold;margin-top: 3px;line-height: 26px;}
+.t_border {border: 2px solid #c6ddfc;border-radius: 4px;padding: 8px 16px;display: inline-block;color: #1875F0;font-family: Roboto;font-size: 12px;font-weight: bold;line-height: 14px;text-align: center;text-transform: uppercase;margin-right: 24px;}
+.t_background {border: 2px solid #1875F0;border-radius: 4px;padding: 8px 16px;display: inline-block;color: #fff;font-family: Roboto;font-size: 12px;font-weight: bold;line-height: 14px;text-align: center;background-color: #1875F0;text-transform: uppercase;}
+.table.table_ireo.table_Trustees_Search tbody tr td > span.div_rating {margin-left: 0;}
+.t_background:hover {color: #fff;}
+
+/** LiquidRe–Trustee-Dashboard***/
+.table.table_dash tbody tr td span {padding: 6px 0;display: inline-block;}
+.table.table_dash tbody tr td {color: #000000;font-family: Roboto;font-size: 14px;line-height: 16px;padding: 16px 24px;border: 0;font-weight: 500;vertical-align: middle;}
+.table.table_dash thead tr th {border-top: 2px solid #f7f7f7 !important;border-bottom: 2px solid #f7f7f7 !important;padding: 16px 24px;opacity: 0.25;color: #000000;font-family: Roboto;font-size: 12px;font-weight: 500;text-transform: uppercase;line-height: 14px;}
+.table.table_dash {margin: 0;}
+.dash_head {padding: 24px 24px 16px 24px;}
+.dash_head h6 {color: #000000;font-family: Roboto;font-size: 16px;font-weight: 500;line-height: 22px;margin: 0;padding: 0;margin-top: 0;text-transform: uppercase;}
+.dash_table_content {margin: 24px 0 24px 0;background: #fff;border-radius: 4px;padding: 0;}
+.table_dash_dividend .btn_set {float: none;}
+.btn_set.btn_rejected {margin-left: 16px;}
+.table.table_dash.table_dash_dividend thead tr th:last-child {width: 180px;}
+.table.table_dash.table_dash_dividend tbody tr td:last-child {width: 180px;}
+.table.table_dash.table_acceptable tbody tr td:last-child {width: 260px;}
+.table.table_dash.table_acceptable thead tr th:last-child {width: 260px;} 
+
+
+/* LiquidRe–LRET-Listing ***/
+.first_left_listing.listing_list_graph {padding: 24px;}
+.listing_list_graph .simple_para {margin: 16px 0 0 0;}
+.third_grapg_income .head_h6 span {float: right;color: #1875F0;}
+.third_left_listing.third_grapg_income .graph_list {margin-bottom: 0;}
+.tab_mkt_share .tab_head li {width: 50%;}
+.mkt_sell_buy {text-align: center;margin-top: 0;}
+.a_sell_mkt {border-radius: 4px;background-color: #FF5E57;color: #FFFFFF;font-family: Roboto;font-size: 12px;font-weight: bold;line-height: 14px;text-align: center;padding: 12px 20px;margin-right: 8px;display: inline-block;}
+.a_buy_mkt {border-radius: 4px;color: #FFFFFF;font-family: Roboto;font-size: 12px;font-weight: bold;line-height: 14px;text-align: center;background-color: #37DB8E;padding: 12px 20px;margin-right: 8px;margin-left: 8px;}
+.tab_order_form h2 {margin: 0 0 16px 0;color: #4A4A4A;font-family: Roboto;font-size: 16px;font-weight: 500;line-height: 22px;}
+.tab_order_form {background: #fff;padding: 24px;}
+.tab_mkt_share {margin-bottom: 24px;border-radius: 4px;}
+
+/* LiquidRe–LRETs ***/
+.right_graph_img_lredts {text-align: right;}
+.offer_d_lrets .right_o {width: 40%;}
+.offer_d_lrets .left_o {width: 60%;}
+.offer_d_lrets .left_o h6 {margin-bottom: 12px;}
+.offer_d_lrets .left_o h5 {margin-bottom: 12px;}
+.offer_d_lrets .left_o .simple_para {margin-bottom: 8px;}
+.offer_d_lrets .left_o .simple_para.last_simple_para {margin-bottom: 0px;}
+
+.portfolio_head.prot_head_custom {margin-bottom: 24px;}
+.a_depo_buy {border-radius: 4px;background-color: #1875F0;color: #FFFFFF;font-family: Roboto;font-size: 12px;font-weight: 500;line-height: 14px;text-align: center;display: inline-block;padding: 8px 16px;text-transform: uppercase;margin-left: 24px;}
+.span_rs {color: #1875F0;font-family: Roboto;font-size: 20px;font-weight: bold;line-height: 26px;vertical-align: middle;}
+.right_side_wrapper {float: right;}
+.portfolio_head.prot_head_custom h2 {margin-top: 2px;}
+.table.table_ireo tbody tr:hover td {color: #1875F0;}
