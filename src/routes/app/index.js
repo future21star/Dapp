@@ -1,10 +1,11 @@
 module.exports = {
   path: 'app',
   getChildRoutes(partialNextState, cb) {
-    console.log('------------------------------app layout get child routes --------------------------');
     require.ensure([], (require) => {
       cb(null, [
         require('./routes/dexrenodapp'),
+        require('./routes/dexre-add-property-address'),
+        require('./routes/dexre-add-property-address-pop-legal-2'),
       ])
     })
   },

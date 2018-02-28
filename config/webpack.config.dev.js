@@ -82,7 +82,8 @@ module.exports = {
       components: `${paths.appSrc}/components/`,
       images: `${paths.appSrc}/assets/images/`,
       sources: `${paths.appSrc}/sources/`,
-      styles: `${paths.appSrc}/styles/`
+      styles: `${paths.appSrc}/styles/`,
+      routes: `${paths.appSrc}/routes/`,
     }
   },
 
@@ -148,7 +149,7 @@ module.exports = {
       // in development "style" loader enables hot editing of CSS.
       {
         test: /\.css$/,
-        loader: 'style!css?importLoaders=1!postcss'
+        loader: ExtractTextPlugin.extract('css!sass')
       },
       // JSON is not enabled by default in Webpack but both Node and Browserify
       // allow it implicitly so we also enable it.
@@ -215,7 +216,7 @@ module.exports = {
         ]
       }),
     ];
-  },
+  }, 
   plugins: [
     // Makes the public URL available as %PUBLIC_URL% in index.html, e.g.:
     // <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
@@ -245,7 +246,7 @@ module.exports = {
 
     new ExtractTextPlugin('dist/styles/main.css', {
         allChunks: true
-    })    
+    })
   ],
   // Some libraries import Node modules but don't use them in the browser.
   // Tell Webpack to provide empty mocks for them so importing them works.
