@@ -10,14 +10,58 @@ class MyProperties extends Component {
   constructor(props) {
     super(props);
 
-    this.state = { isOpen: false };
+    this.state = { 
+      isOpen1: false, 
+      isOpen2: false,
+      isOpen3: false,
+      isOpen4: false
+    };
+  }
+
+  goToStep = (page_index) => {
+    console.log("HERE", page_index);
+    let initial_state = {
+      isOpen1: false,
+      isOpen2: false,
+      isOpen3: false,
+      isOpen4: false,
+    };
+    switch(page_index) {
+      case 1: 
+        this.setState({
+          ...initial_state,
+          isOpen1: true
+        });
+        break;
+      case 2: 
+        this.setState({
+          ...initial_state,
+          isOpen2: true
+        });
+        break;
+      case 3: 
+        this.setState({
+          ...initial_state,
+          isOpen3: true
+        });
+        break;      
+      case 4: 
+        this.setState({
+          ...initial_state,
+          isOpen4: true
+        });
+        break;      
+    }
+    
   }
 
   toggleModal = () => {
     this.setState({
-      isOpen: !this.state.isOpen
+      ...this.state,
+      isOpen1: !this.state.isOpen1
     });
   }
+
 
   render() {
     return(
@@ -76,7 +120,10 @@ class MyProperties extends Component {
             </table>
           </div>
         </div>     
-        <AddPropertyExplainerModal4  show={this.state.isOpen} onClose={this.toggleModal}/>
+        <AddPropertyExplainerModal1  show={this.state.isOpen1} onClose={this.toggleModal} goToStep={this.goToStep} />
+        <AddPropertyExplainerModal2  show={this.state.isOpen2} onClose={this.toggleModal} goToStep={this.goToStep} />
+        <AddPropertyExplainerModal3  show={this.state.isOpen3} onClose={this.toggleModal} goToStep={this.goToStep} />
+        <AddPropertyExplainerModal4  show={this.state.isOpen4} onClose={this.toggleModal} goToStep={this.goToStep} />
       </div>
     )
 

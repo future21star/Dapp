@@ -5,10 +5,11 @@ declare var $;
 class AddPropertyExplainerModal3 extends Component {
 	componentWillReceiveProps(nextProps) {
 		if(nextProps.show) {
-			$('.modal').modal('toggle');
+			$('#add_property_explainer_modal_3').modal();
+			$('#add_property_explainer_modal_3').toggleClass('is-visible');
 		}
 		else {
-			$('.modal').modal('toggle');
+			$('#add_property_explainer_modal_3').removeClass('is-visible');
 		}
 	}
 
@@ -16,16 +17,12 @@ class AddPropertyExplainerModal3 extends Component {
 	}
 
 	goToStep(page_index) {
-
-	}
-
-	closeModal() {
-		$('.modal').modal('toggle');
+		this.props.goToStep(page_index);
 	}
 
 	render() {
 		return (
-		  <div className="modal custom_modal pop_sell pop_pick_sell" id="myModal2" role="dialog">
+		  <div className="modal custom_modal pop_sell pop_pick_sell" id="add_property_explainer_modal_3" role="dialog">
 		    <div className="modal-dialog">
 		    
 		      <div className="modal-content">
@@ -105,8 +102,8 @@ class AddPropertyExplainerModal3 extends Component {
 					</ul>
 				</div>
 				<div className="btn_step_all">
-					<a href="#" className="a_back" onClick={this.goToStep(2)}>Back</a>
-					<a href="#" className="a_prev" onClick={this.goToStep(4)}>Finished</a>
+					<a href="#" className="a_back" onClick={ () => { this.goToStep(2)} }>Back</a>
+					<a href="#" className="a_prev" onClick={ () => { this.goToStep(4)} }>Finished</a>
 				</div>
 		      </div>
 		      

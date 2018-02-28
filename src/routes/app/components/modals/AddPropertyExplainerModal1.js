@@ -5,15 +5,16 @@ declare var $;
 class AddPropertyExplainerModal1 extends Component {
 	componentWillReceiveProps(nextProps) {
 		if(nextProps.show) {
-			$('.modal').modal('toggle');
+			$('#add_property_explainer_modal_1').modal();
+			$('#add_property_explainer_modal_1').toggleClass('is-visible');
 		}
 		else {
-			$('.modal').modal('toggle');
+			$('#add_property_explainer_modal_1').removeClass('is-visible');
 		}
 	}
 
 	goToStep(page_index) {
-
+		this.props.goToStep(page_index);
 	}
 
 	componentDidMount() {
@@ -25,7 +26,7 @@ class AddPropertyExplainerModal1 extends Component {
 
 	render() {
 		return (
-		<div className="modal custom_modal pop_sell pop_info" id="myModal" role="dialog">
+		<div className="modal custom_modal pop_sell pop_info" id="add_property_explainer_modal_1" role="dialog">
 		    <div className="modal-dialog">
 		    
 		      <div className="modal-content">
@@ -66,7 +67,7 @@ class AddPropertyExplainerModal1 extends Component {
 					</div>
 				</div>
 				<div className="btn_cstm_submit">
-					<a href="#" onClick={this.goToStep(2)}>Get started</a>
+					<a href="#" onClick={() => { this.goToStep(2) }}>Get started</a>
 				</div>
 		      </div>
 		      
@@ -77,7 +78,8 @@ class AddPropertyExplainerModal1 extends Component {
 }
 
 AddPropertyExplainerModal1.propTypes = {
-  show: PropTypes.bool
+  show: PropTypes.bool,
+  goToStep: PropTypes.func
 };
 
 export default AddPropertyExplainerModal1;

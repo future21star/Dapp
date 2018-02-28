@@ -6,10 +6,11 @@ declare var $;
 class AddPropertyExplainerModal4 extends Component {
 	componentWillReceiveProps(nextProps) {
 		if(nextProps.show) {
-			$('.modal').modal('toggle');
+			$('#add_property_explainer_modal_4').modal();
+			$('#add_property_explainer_modal_4').toggleClass('is-visible');
 		}
 		else {
-			$('.modal').modal('toggle');
+			$('#add_property_explainer_modal_4').removeClass('is-visible');
 		}
 	}
 
@@ -17,16 +18,12 @@ class AddPropertyExplainerModal4 extends Component {
 	}
 
 	goToStep(page_index) {
-
-	}
-
-	closeModal() {
-		$('.modal').modal('toggle');
+		this.props.goToStep(page_index);
 	}
 
 	render() {
 		return (
-		  <div className="modal custom_modal pop_sell pop_legal_notice" id="myModal3" role="dialog">
+		  <div className="modal custom_modal pop_sell pop_legal_notice" id="add_property_explainer_modal_4" role="dialog">
 		    <div className="modal-dialog">
 		    
 		      <div className="modal-content">
@@ -56,7 +53,7 @@ class AddPropertyExplainerModal4 extends Component {
 						<a href="#" className="a_download"><span><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xlinkHref='http://www.w3.org/1999/xlink' x="0px" y="0px" width="433.5px" height="433.5px" viewBox="0 0 433.5 433.5" style={{enableBackground:"new 0 0 433.5 433.5"}} > <g> <g id="file-download"> <path d="M395.25,153h-102V0h-153v153h-102l178.5,178.5L395.25,153z M38.25,382.5v51h357v-51H38.25z"/> </g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> </svg></span>Download</a>
 					</div>
 					<div  className="r_btn_notice">
-						<a href="#" onClick={this.goToStep(3)}>Back</a>
+						<a href="#" onClick={ () => { this.goToStep(3)} }>Back</a>
 					</div>
 				</div>
 		      </div>
