@@ -5,6 +5,12 @@ import AddPropertyExplainerModal1 from './modals/AddPropertyExplainerModal1';
 import AddPropertyExplainerModal2 from './modals/AddPropertyExplainerModal2';
 import AddPropertyExplainerModal3 from './modals/AddPropertyExplainerModal3';
 import AddPropertyExplainerModal4 from './modals/AddPropertyExplainerModal4';
+import BuyPropertyBuyerBewareModal from './modals/BuyPropertyBuyerBewareModal';
+import BuyPropertyDoneModal from './modals/BuyPropertyDoneModal';
+import BuyPropertyFbuyerWarningModal from './modals/BuyPropertyFbuyerWarningModal';
+import BuyPropertyForSaleModal from './modals/BuyPropertyForSaleModal';
+import BuyPropertyProcessingModal from './modals/BuyPropertyProcessingModal';
+import CancelSaleModal from './modals/CancelSaleModal';
 
 class MyProperties extends Component {
   constructor(props) {
@@ -14,7 +20,13 @@ class MyProperties extends Component {
       isOpen1: false, 
       isOpen2: false,
       isOpen3: false,
-      isOpen4: false
+      isOpen4: false,
+      isOpenForBuyPropertyBuyerBewareModal: false,
+      isOpenForBuyPropertyDoneModal: false,
+      isOpenForBuyPropertyFbuyerWarningModal: false,
+      isOpenForBuyPropertyForSaleModal: false,
+      isOpenForBuyPropertyProcessingModal: false,
+      isOpenForCancelSaleModal: false
     };
   }
 
@@ -58,7 +70,12 @@ class MyProperties extends Component {
   toggleModal = () => {
     this.setState({
       ...this.state,
-      isOpen1: !this.state.isOpen1
+      // isOpenForBuyPropertyBuyerBewareModal: !this.state.isOpenForBuyPropertyBuyerBewareModal,
+      // isOpenForBuyPropertyDoneModal: !this.state.isOpenForBuyPropertyDoneModal
+      // isOpenForBuyPropertyFbuyerWarningModal: !this.state.isOpenForBuyPropertyFbuyerWarningModal
+      // isOpenForBuyPropertyForSaleModal: !this.state.isOpenForBuyPropertyForSaleModal
+      // isOpenForBuyPropertyProcessingModal: !this.state.isOpenForBuyPropertyProcessingModal
+      isOpenForCancelSaleModal: !this.state.isOpenForCancelSaleModal
     });
   }
 
@@ -120,10 +137,8 @@ class MyProperties extends Component {
             </table>
           </div>
         </div>     
-        <AddPropertyExplainerModal1  show={this.state.isOpen1} onClose={this.toggleModal} goToStep={this.goToStep} />
-        <AddPropertyExplainerModal2  show={this.state.isOpen2} onClose={this.toggleModal} goToStep={this.goToStep} />
-        <AddPropertyExplainerModal3  show={this.state.isOpen3} onClose={this.toggleModal} goToStep={this.goToStep} />
-        <AddPropertyExplainerModal4  show={this.state.isOpen4} onClose={this.toggleModal} goToStep={this.goToStep} />
+        <BuyPropertyProcessingModal show={this.state.isOpenForBuyPropertyProcessingModal} onClose={this.toggleModal} />
+        <CancelSaleModal show={this.state.isOpenForCancelSaleModal} onClose={this.toggleModal} />
       </div>
     )
 
