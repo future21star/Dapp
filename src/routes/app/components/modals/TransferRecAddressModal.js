@@ -32,7 +32,7 @@ class TransferRecAddressModal extends Component {
 		      <div className="modal-content">
 		        <div className="modal-header">
 		          <button type="button" className="close" data-dismiss="modal">
-		<svg width="14px" height="14px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+		<svg width="14px" height="14px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xlinkHref="http://www.w3.org/1999/xlink">
 		    <desc>Created with Sketch.</desc>
 		    <defs></defs>
 		    <g id="Web-Application" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -50,7 +50,7 @@ class TransferRecAddressModal extends Component {
 				<div className="modal_custom">
 					<div className="content_property">
 						<div className="profile_cstm">
-							<img src="images/img_profile_pic.jpg"/>
+							<img src={img_profile_pic} />
 						</div>
 						<div className="profile_content_right">
 							<div className="p_three_col">
@@ -72,7 +72,7 @@ class TransferRecAddressModal extends Component {
 					<div className="property_dis">
 						<h6>Trasfer Property to</h6>
 						<div className="input_custom">
-							<input type="text" name="fname" placeholder="0x981Cd446Eb490F6CaDa9a09A3fb2BA0FBafb40e8">
+							<input type="text" name="fname" placeholder="0x981Cd446Eb490F6CaDa9a09A3fb2BA0FBafb40e8" />
 						</div>
 					</div>
 				</div>

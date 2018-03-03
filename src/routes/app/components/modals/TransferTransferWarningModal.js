@@ -3,13 +3,13 @@ import style from './style.scss';
 import img_profile_pic from 'images/img_profile_pic.jpg';
 declare var $;
 
-class TransferTransferConfirmModal extends Component {
+class TransferTransferWarningModal extends Component {
 	componentWillReceiveProps(nextProps) {
 		if(nextProps.show) {
-			$('#transfer_transfer_confirm_modal').modal('show');
+			$('#transfer_transfer_warning_modal').modal('show');
 		}
 		else {
-			$('#transfer_transfer_confirm_modal').modal('hide');
+			$('#transfer_transfer_warning_modal').modal('hide');
 		}
 	}
 
@@ -26,9 +26,8 @@ class TransferTransferConfirmModal extends Component {
 
 	render() {
 		return (
-			<div className="modal fade pop_sell pop_warning pop_warning_transfer" id="transfer_transfer_confirm_modal" role="dialog">
+			<div className="modal fade pop_sell pop_warning pop_warning_transfer" id="transfer_transfer_warning_modal" role="dialog">
 			    <div className="modal-dialog">
-			    
 			      <div className="modal-content">
 			        <div className="modal-header">
 			          <button type="button" className="close" data-dismiss="modal">
@@ -45,13 +44,14 @@ class TransferTransferConfirmModal extends Component {
 			        </g>
 			    </g>
 			</svg></button>
-			          <h4 className="modal-title">Done</h4>
+			          <h4 className="modal-title">Warning</h4>
 			        </div>
 					<div className="modal_custom">
-						<p className="para_legal para_approval_request">Your property has been transferred to: 0x981Cd446Eb490F6CaDa9a09A3fb2BA0FBafb40e8</p>
+						<p className="para_legal para_approval_request">When you transfer your property to another address you will no longer own your property. Are you sure you want to proceed?</p>
 					</div>
-					<div className="btn_cstm_submit">
-						<a href="#">Dashboard</a>
+					<div className="btn_step_all">
+						<a href="#" className="a_back">Back</a>
+						<a href="#" className="a_prev">I Agree</a>
 					</div>
 			      </div>
 			      
@@ -61,9 +61,9 @@ class TransferTransferConfirmModal extends Component {
 	}
 }
 
-TransferTransferConfirmModal.propTypes = {
+TransferTransferWarningModal.propTypes = {
   show: PropTypes.bool,
   goToStep: PropTypes.func
 };
 
-export default TransferTransferConfirmModal;
+export default TransferTransferWarningModal;

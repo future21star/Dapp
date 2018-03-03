@@ -28,11 +28,10 @@ class SellPropertyCreateListingWarningModal extends Component {
 		return (
 			<div className="modal fade pop_sell pop_warning pop_warning_transfer" id="sell_property_create_listing_warning_modal" role="dialog">
 			    <div className="modal-dialog">
-			    
 			      <div className="modal-content">
 			        <div className="modal-header">
 			          <button type="button" className="close" data-dismiss="modal">
-			<svg width="14px" height="14px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+			<svg width="14px" height="14px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xlinkHref="http://www.w3.org/1999/xlink">
 			    <desc>Created with Sketch.</desc>
 			    <defs></defs>
 			    <g id="Web-Application" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">

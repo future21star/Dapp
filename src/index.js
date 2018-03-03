@@ -67,7 +67,8 @@ function scrollToTop() {
 const rootRoute = {
   path: '/',
   component: require('./containers/App').default,
-  indexRoute: { onEnter: (nextState, replace) => replace('/app/dexre-add-property-address-pop-legal-2') },
+  // indexRoute: { onEnter: (nextState, replace) => replace('/app/dexre-add-property-address-pop-legal-2') },
+  indexRoute: { onEnter: (nextState, replace) => replace('/app/verifynew') },
   childRoutes: [
     require('./routes/app'),
     // require('./routes/404'),

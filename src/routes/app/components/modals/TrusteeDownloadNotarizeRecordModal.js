@@ -3,13 +3,13 @@ import style from './style.scss';
 import img_profile_pic from 'images/img_profile_pic.jpg';
 declare var $;
 
-class TransferTransferConfirmModal extends Component {
+class TrusteeDownloadNotarizeRecordModal extends Component {
 	componentWillReceiveProps(nextProps) {
 		if(nextProps.show) {
-			$('#transfer_transfer_confirm_modal').modal('show');
+			$('#trustee_download_notarize_record_modal').modal('show');
 		}
 		else {
-			$('#transfer_transfer_confirm_modal').modal('hide');
+			$('#trustee_download_notarize_record_modal').modal('hide');
 		}
 	}
 
@@ -26,9 +26,8 @@ class TransferTransferConfirmModal extends Component {
 
 	render() {
 		return (
-			<div className="modal fade pop_sell pop_warning pop_warning_transfer" id="transfer_transfer_confirm_modal" role="dialog">
+			<div className="modal fade pop_sell pop_custom_record" id="trustee_download_notarize_record_modal" role="dialog">
 			    <div className="modal-dialog">
-			    
 			      <div className="modal-content">
 			        <div className="modal-header">
 			          <button type="button" className="close" data-dismiss="modal">
@@ -45,13 +44,31 @@ class TransferTransferConfirmModal extends Component {
 			        </g>
 			    </g>
 			</svg></button>
-			          <h4 className="modal-title">Done</h4>
+			          <h4 className="modal-title">Trustee Aproval Requested </h4>
 			        </div>
 					<div className="modal_custom">
-						<p className="para_legal para_approval_request">Your property has been transferred to: 0x981Cd446Eb490F6CaDa9a09A3fb2BA0FBafb40e8</p>
+						<div className="dex_step_popup active_step">
+							<div className="number_custom_doc"><span>1</span></div>
+							<div className="doc_content_dex">
+								<h2>Your almost done</h2>
+								<p>To get started, download the Trust and the Deed.</p>
+								<div className="download_btn"><a href="#">Download</a></div>
+							</div>
+						</div>
+						<div className="dex_step_popup">
+							<div className="number_custom_doc"><span>2</span></div>
+							<div className="doc_content_dex">
+								<h2>Get your documets Notarized</h2>
+								<p>It's time for you to get to work! Time to Notarize your documents. The best way to do this in using <a href="#">https://notarize.com</a> If you want to find your own public notary that is fine as well. After you have gotten everything notarized upload the documents below.</p>
+								<div className="file-btn file-btn_doc"> 
+									<span className="btn">Browse Computer</span> 
+									<input type="file" name="my_doc_upload" id="my_doc_upload" multiple="false" />  
+								</div>
+							</div>
+						</div>
 					</div>
 					<div className="btn_cstm_submit">
-						<a href="#">Dashboard</a>
+						<a href="#">Finish</a>
 					</div>
 			      </div>
 			      
@@ -61,9 +78,9 @@ class TransferTransferConfirmModal extends Component {
 	}
 }
 
-TransferTransferConfirmModal.propTypes = {
+TrusteeDownloadNotarizeRecordModal.propTypes = {
   show: PropTypes.bool,
   goToStep: PropTypes.func
 };
 
-export default TransferTransferConfirmModal;
+export default TrusteeDownloadNotarizeRecordModal;

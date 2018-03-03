@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import PropertyAddressModal from './modals/PropertyAddressModal';
 import LegalDescriptionModal from './modals/LegalDescriptionModal';
 import AddPropertyExplainerModal1 from './modals/AddPropertyExplainerModal1';
 import AddPropertyExplainerModal2 from './modals/AddPropertyExplainerModal2';
@@ -11,6 +10,21 @@ import BuyPropertyFbuyerWarningModal from './modals/BuyPropertyFbuyerWarningModa
 import BuyPropertyForSaleModal from './modals/BuyPropertyForSaleModal';
 import BuyPropertyProcessingModal from './modals/BuyPropertyProcessingModal';
 import CancelSaleModal from './modals/CancelSaleModal';
+import DissolveTrustConfirmDissolveModal from './modals/DissolveTrustConfirmDissolveModal';
+import DissolveTrustPopDissolveModal from './modals/DissolveTrustPopDissolveModal';
+import MyPropertiesForSaleModal from './modals/MyPropertiesForSaleModal';
+import MyPropertiesInTrustModal from './modals/MyPropertiesInTrustModal';
+import MyPropertiesUnfinishedModal from './modals/MyPropertiesUnfinishedModal';
+import PropertyAddressModal from './modals/PropertyAddressModal';
+import SellPropertyCreateListingModal from './modals/SellPropertyCreateListingModal';
+import SellPropertyCreateListingWarningModal from './modals/SellPropertyCreateListingWarningModal';
+import TransferRecAddressModal from './modals/TransferRecAddressModal';
+import TransferTransferConfirmModal from './modals/TransferTransferConfirmModal';
+import TransferTransferWarningModal from './modals/TransferTransferWarningModal';
+import TrusteeApprovalModal from './modals/TrusteeApprovalModal';
+import TrusteeConfirmModal from './modals/TrusteeConfirmModal';
+import TrusteeDownloadNotarizeRecordModal from './modals/TrusteeDownloadNotarizeRecordModal';
+import TrusteePickModal from './modals/TrusteePickModal';
 
 class MyProperties extends Component {
   constructor(props) {
@@ -26,7 +40,8 @@ class MyProperties extends Component {
       isOpenForBuyPropertyFbuyerWarningModal: false,
       isOpenForBuyPropertyForSaleModal: false,
       isOpenForBuyPropertyProcessingModal: false,
-      isOpenForCancelSaleModal: false
+      isOpenForCancelSaleModal: false,
+      isOpenForDissolveTrustConfirmDissolveModal: false
     };
   }
 
@@ -75,7 +90,8 @@ class MyProperties extends Component {
       // isOpenForBuyPropertyFbuyerWarningModal: !this.state.isOpenForBuyPropertyFbuyerWarningModal
       // isOpenForBuyPropertyForSaleModal: !this.state.isOpenForBuyPropertyForSaleModal
       // isOpenForBuyPropertyProcessingModal: !this.state.isOpenForBuyPropertyProcessingModal
-      isOpenForCancelSaleModal: !this.state.isOpenForCancelSaleModal
+      // isOpenForCancelSaleModal: !this.state.isOpenForCancelSaleModal
+      isOpenForDissolveTrustConfirmDissolveModal: !this.state.DissolveTrustConfirmDissolveModal
     });
   }
 
@@ -137,8 +153,7 @@ class MyProperties extends Component {
             </table>
           </div>
         </div>     
-        <BuyPropertyProcessingModal show={this.state.isOpenForBuyPropertyProcessingModal} onClose={this.toggleModal} />
-        <CancelSaleModal show={this.state.isOpenForCancelSaleModal} onClose={this.toggleModal} />
+        <TrusteePickModal show={this.state.isOpenForDissolveTrustConfirmDissolveModal} onClose={this.toggleModal} />
       </div>
     )
 

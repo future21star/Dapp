@@ -6,6 +6,8 @@ module.exports = {
         require('./routes/dexrenodapp'),
         require('./routes/dexre-add-property-address'),
         require('./routes/dexre-add-property-address-pop-legal-2'),
+        require('./routes/dashboard'),
+        require('./routes/verifynew'),
       ])
     })
   },
