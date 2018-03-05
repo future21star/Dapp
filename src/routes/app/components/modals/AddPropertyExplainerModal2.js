@@ -15,10 +15,6 @@ class AddPropertyExplainerModal2 extends Component {
 	componentDidMount() {
 	}
 
-	goToStep(page_index) {
-		this.props.goToStep(page_index);
-	}
-
 	render() {
 		return (
 		  <div className="modal custom_modal pop_sell pop_step_prp" id="add_property_explainer_modal_2" role="dialog">
@@ -46,25 +42,49 @@ class AddPropertyExplainerModal2 extends Component {
 				<div className="modal_custom">
 					<div className="input_custom">
 						<label>Street Address</label>
-						<input type="text" name="fname" placeholder="Enter a Street Address" />
+						<input 
+							type="text" 
+							name="fname" 
+							placeholder="Enter a Street Address" 
+							value={this.props.newProperty.stree_address}
+							onChange={ (ev) => this.props.handleNewPropertyChange('stree_address', ev.target.value)}							
+						/>
 					</div>
 					<div className="three_row">
 						<div className="input_3">
 							<div className="input_custom">
 								<label>City</label>
-								<input type="text" name="fname" placeholder="Enter City" />
+								<input 
+									type="text" 
+									name="fname" 
+									placeholder="Enter City" 
+									value={this.props.newProperty.city} 
+									onChange={ (ev) => this.props.handleNewPropertyChange('city', ev.target.value)}							
+								/>
 							</div>
 						</div>
 						<div className="input_3">
 							<div className="input_custom">
 								<label>State</label>
-								<input type="text" name="fname" placeholder="Enter State" />
+								<input 
+									type="text" 
+									name="fname" 
+									placeholder="Enter State" 
+									value={this.props.newProperty.state} 
+									onChange={ (ev) => this.props.handleNewPropertyChange('state', ev.target.value)}							
+								/>
 							</div>
 						</div>
 						<div className="input_3">
 							<div className="input_custom">
 								<label>ZIP Code</label>
-								<input type="text" name="fname" placeholder="Enter Zip Code" />
+								<input 
+									type="text" 
+									name="fname" 
+									placeholder="Enter Zip Code" 
+									value={this.props.newProperty.zip_code} 
+									onChange={ (ev) => this.props.handleNewPropertyChange('zip_code', ev.target.value)}							
+								/>
 							</div>
 						</div>
 					</div>
@@ -75,12 +95,18 @@ class AddPropertyExplainerModal2 extends Component {
 							<p>The moment you think of buying a Web Hosting Plan, you know one thing – So many choices, which one to choose? Whether you would want to choose Shared Linux Packages or a Unix Package or do you want to go for a shared windows package or packages reseller for hosting? </p>
 						</div>
 						</span></label>
-						<input type="text" name="fname" placeholder="Enter Legal Description" />
+						<input 
+							type="text" 
+							name="fname" 
+							placeholder="Enter Legal Description" 
+							value={this.props.newProperty.legal_description} 
+							onChange={ (ev) => this.props.handleNewPropertyChange('legal_description', ev.target.value)}							
+						/>
 					</div>
 				</div>
 				<div className="btn_step_all">
-					<a href="#" className="a_back" onClick={ () => { this.goToStep(1)} }>Back</a>
-					<a href="#" className="a_prev" onClick={ () => { this.goToStep(3)} }>Next</a>
+					<a href="#" className="a_back" onClick={ () => { this.props.goToPrevStep(this.props.newProperty)} }>Back</a>
+					<a href="#" className="a_prev" onClick={ () => { this.props.goToNextStep(this.props.newProperty)} }>Next</a>
 				</div>
 		      </div>
 		      
@@ -91,7 +117,11 @@ class AddPropertyExplainerModal2 extends Component {
 }
 
 AddPropertyExplainerModal2.propTypes = {
-  show: PropTypes.bool
+  show: PropTypes.bool,
+  newProperty: PropTypes.object,
+  goToPrevStep: PropTypes.func,
+  goToNextStep: PropTypes.func,
+
 };
 
 export default AddPropertyExplainerModal2;

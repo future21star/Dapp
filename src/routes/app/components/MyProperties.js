@@ -30,75 +30,69 @@ class MyProperties extends Component {
   constructor(props) {
     super(props);
     this.state = { 
-      isOpen1: false, 
-      isOpen2: false,
-      isOpen3: false,
-      isOpen4: false,
-      isOpenForBuyPropertyBuyerBewareModal: false,
-      isOpenForBuyPropertyDoneModal: false,
-      isOpenForBuyPropertyFbuyerWarningModal: false,
-      isOpenForBuyPropertyForSaleModal: false,
-      isOpenForBuyPropertyProcessingModal: false,
-      isOpenForCancelSaleModal: false,
-      isOpenForDissolveTrustConfirmDissolveModal: false
+      modal_flags: {
+        flag_add_property_explainer_modal1:false,
+        flag_add_property_explainer_modal2:false,
+        flag_add_property_explainer_modal3:false,
+        flag_add_property_explainer_modal4:false        
+      },
+      new_property: {
+        stree_address: '',
+        city: '',
+        state: '',
+        zip_code: '',
+        legal_description: '',
+        trustee: '',
+        status: '',
+      }
     };
   }
 
-  goToStep = (page_index) => {
-    console.log("HERE", page_index);
-    let initial_state = {
-      isOpen1: false,
-      isOpen2: false,
-      isOpen3: false,
-      isOpen4: false,
-    };
-    switch(page_index) {
-      case 1: 
-        this.setState({
-          ...initial_state,
-          isOpen1: true
-        });
-        break;
-      case 2: 
-        this.setState({
-          ...initial_state,
-          isOpen2: true
-        });
-        break;
-      case 3: 
-        this.setState({
-          ...initial_state,
-          isOpen3: true
-        });
-        break;      
-      case 4: 
-        this.setState({
-          ...initial_state,
-          isOpen4: true
-        });
-        break;      
+  goToStep = (modal_flag_name) => {
+    var initial_modal_flags_state = this.state.modal_flags;
+    for (var key in initial_modal_flags_state) {
+        if (initial_modal_flags_state.hasOwnProperty(key)) {
+            if (key === modal_flag_name) {
+              initial_modal_flags_state[key] = true;
+            }
+            else {
+              initial_modal_flags_state[key] = false;
+            }
+        }
     }
-    
+    this.setState({
+      ...this.state,
+      ...initial_modal_flags_state
+    });
   }
 
   toggleModal = () => {
     this.setState({
       ...this.state,
-      // isOpenForBuyPropertyBuyerBewareModal: !this.state.isOpenForBuyPropertyBuyerBewareModal,
-      // isOpenForBuyPropertyDoneModal: !this.state.isOpenForBuyPropertyDoneModal
-      // isOpenForBuyPropertyFbuyerWarningModal: !this.state.isOpenForBuyPropertyFbuyerWarningModal
-      // isOpenForBuyPropertyForSaleModal: !this.state.isOpenForBuyPropertyForSaleModal
-      // isOpenForBuyPropertyProcessingModal: !this.state.isOpenForBuyPropertyProcessingModal
-      // isOpenForCancelSaleModal: !this.state.isOpenForCancelSaleModal
-      isOpenForDissolveTrustConfirmDissolveModal: !this.state.isOpenForDissolveTrustConfirmDissolveModal
+      modal_flags: {
+        ...this.state.modal_flags,
+        flag_add_property_explainer_modal1: !this.state.modal_flags.flag_add_property_explainer_modal1
+      }
     });
   }
 
   addProperty = () => {
     this.setState({
-      ...this.sate,
-      isOpenForAddPropertyExplainerModal1: !this.state.isOpenForAddPropertyExplainerModal1
-    })    
+      ...this.state,
+      modal_flags: {
+        ...this.state.modal_flags,
+        flag_add_property_explainer_modal1: !this.state.modal_flags.flag_add_property_explainer_modal1
+      }
+    });
+  }
+
+  handleNewPropertyChange = (key, value) => {
+    var new_property = this.state.new_property;
+    new_property[key] = value;
+    this.setState({
+      ...this.state,
+      new_property: new_property
+    });
   }
 
   render() {
@@ -107,7 +101,7 @@ class MyProperties extends Component {
         <div className="prp_content">
           <div className="property_sale">
             <h6>My Properties</h6>
-            <div className="btn_add"><a onClick={this.addProperty}>Add Property</a></div>
+            <div className="btn_add"><a href="#" onClick={() => {this.addProperty()}}>Add Property</a></div>
           </div>
           <div className="table_responsive">
             <table className="table custom_table">
@@ -158,8 +152,10 @@ class MyProperties extends Component {
             </table>
           </div>
         </div>     
-        <AddPropertyExplainerModal1 show={this.state.isOpenForAddPropertyExplainerModal1} onClose={this.toggleModal} />
-        <DissolveTrustPopDissolveModal show={this.state.isOpenForDissolveTrustConfirmDissolveModal} onClose={this.toggleModal} />
+        <AddPropertyExplainerModal1 show={this.state.modal_flags.flag_add_property_explainer_modal1} newProperty={this.state.new_property} goToNextStep={(new_property) => {this.goToStep('flag_add_property_explainer_modal2')}} handleNewPropertyChange={ (key, value) => this.handleNewPropertyChange(key, value) }/>
+        <AddPropertyExplainerModal2 show={this.state.modal_flags.flag_add_property_explainer_modal2} newProperty={this.state.new_property} goToPrevStep={(new_property) => {this.goToStep('flag_add_property_explainer_modal1')}} goToNextStep={() => {this.goToStep('flag_add_property_explainer_modal3')}} handleNewPropertyChange={ (key, value) => this.handleNewPropertyChange(key, value) } />
+        <AddPropertyExplainerModal3 show={this.state.modal_flags.flag_add_property_explainer_modal3} newProperty={this.state.new_property} goToPrevStep={(new_property) => {this.goToStep('flag_add_property_explainer_modal2')}} goToNextStep={() => {this.goToStep('flag_add_property_explainer_modal4')}}  handleNewPropertyChange={ (key, value) => this.handleNewPropertyChange(key, value) }/>
+        <AddPropertyExplainerModal4 show={this.state.modal_flags.flag_add_property_explainer_modal4} newProperty={this.state.new_property} goToPrevStep={(new_property) => {this.goToStep('flag_add_property_explainer_modal3')}} handleNewPropertyChange={ (key, value) => this.handleNewPropertyChange(key, value) } />
       </div>
     )
 

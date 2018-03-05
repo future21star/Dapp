@@ -12,10 +12,6 @@ class AddPropertyExplainerModal1 extends Component {
 		}
 	}
 
-	goToStep(page_index) {
-		this.props.goToStep(page_index);
-	}
-
 	componentDidMount() {
 	}
 
@@ -66,7 +62,7 @@ class AddPropertyExplainerModal1 extends Component {
 					</div>
 				</div>
 				<div className="btn_cstm_submit">
-					<a href="#" onClick={() => { this.goToStep(2) }}>Get started</a>
+					<a href="#" onClick={() => { this.props.goToNextStep() }}>Get started</a>
 				</div>
 		      </div>
 		      
@@ -78,7 +74,8 @@ class AddPropertyExplainerModal1 extends Component {
 
 AddPropertyExplainerModal1.propTypes = {
   show: PropTypes.bool,
-  goToStep: PropTypes.func
+  newProperty: PropTypes.object,
+  goToNextStep: PropTypes.func
 };
 
 export default AddPropertyExplainerModal1;

@@ -15,10 +15,6 @@ class AddPropertyExplainerModal3 extends Component {
 	componentDidMount() {
 	}
 
-	goToStep(page_index) {
-		this.props.goToStep(page_index);
-	}
-
 	render() {
 		return (
 		  <div className="modal custom_modal pop_sell pop_pick_sell" id="add_property_explainer_modal_3" role="dialog">
@@ -101,8 +97,8 @@ class AddPropertyExplainerModal3 extends Component {
 					</ul>
 				</div>
 				<div className="btn_step_all">
-					<a href="#" className="a_back" onClick={ () => { this.goToStep(2)} }>Back</a>
-					<a href="#" className="a_prev" onClick={ () => { this.goToStep(4)} }>Finished</a>
+					<a href="#" className="a_back" onClick={ () => { this.props.goToPrevStep(this.props.newProperty)} }>Back</a>
+					<a href="#" className="a_prev" onClick={ () => { this.props.goToNextStep(this.props.newProperty)} }>Finished</a>
 				</div>
 		      </div>
 		      
@@ -113,7 +109,10 @@ class AddPropertyExplainerModal3 extends Component {
 }
 
 AddPropertyExplainerModal3.propTypes = {
-  show: PropTypes.bool
+  show: PropTypes.bool,
+  newProperty: PropTypes.object,
+  goToPrevStep: PropTypes.func,
+  goToNextStep: PropTypes.func,
 };
 
 export default AddPropertyExplainerModal3;
