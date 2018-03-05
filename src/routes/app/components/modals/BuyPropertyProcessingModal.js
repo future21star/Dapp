@@ -7,11 +7,9 @@ class BuyPropertyProcessingModal extends Component {
 	componentWillReceiveProps(nextProps) {
 		if(nextProps.show) {
 			$('#buy_property_processing_modal').modal('show');
-			// $('#buy_property_processing_modal').toggleClass('is-visible');
 		}
 		else {
 			$('#buy_property_processing_modal').modal('hide');
-			// $('#buy_property_processing_modal').removeClass('is-visible');
 		}
 	}
 

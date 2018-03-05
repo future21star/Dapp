@@ -6,11 +6,10 @@ declare var $;
 class BuyPropertyFbuyerWarningModal extends Component {
 	componentWillReceiveProps(nextProps) {
 		if(nextProps.show) {
-			$('#buy_property_fbuyer_warning_modal').modal();
-			$('#buy_property_fbuyer_warning_modal').toggleClass('is-visible');
+			$('#buy_property_fbuyer_warning_modal').modal('show');
 		}
 		else {
-			$('#buy_property_fbuyer_warning_modal').removeClass('is-visible');
+			$('#buy_property_fbuyer_warning_modal').modal('hide');
 		}
 	}
 

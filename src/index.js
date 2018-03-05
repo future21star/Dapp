@@ -18,7 +18,7 @@ import SimpleStorage from './../build/contracts/SimpleStorage.json'
 import TutorialToken from './../build/contracts/TutorialToken.json'
 
 // Redux Store
-import store from './store'
+import store from './services/store'
 
 // Initialize react-router-redux.
 const history = syncHistoryWithStore(browserHistory, store)
@@ -67,8 +67,8 @@ function scrollToTop() {
 const rootRoute = {
   path: '/',
   component: require('./containers/App').default,
-  // indexRoute: { onEnter: (nextState, replace) => replace('/app/dexre-add-property-address-pop-legal-2') },
-  indexRoute: { onEnter: (nextState, replace) => replace('/app/verifynew') },
+  indexRoute: { onEnter: (nextState, replace) => replace('/app/dexre-add-property-address-pop-legal-2') },
+  // indexRoute: { onEnter: (nextState, replace) => replace('/app/verifynew') },
   childRoutes: [
     require('./routes/app'),
     // require('./routes/404'),
@@ -85,12 +85,14 @@ const rootRoute = {
 }
 
 ReactDOM.render((  
-  <Provider store={store}>
-    <Router
-      onUpdate={scrollToTop}
-      history={history}
-      routes={rootRoute}
-    />
-  </Provider>)
-, document.getElementById('root')
+  <DrizzleProvider options={options}>
+    <Provider store={store}>
+        <Router       
+          onUpdate={scrollToTop}
+          history={history}
+          routes={rootRoute}
+        />
+    </Provider>
+  </DrizzleProvider>
+), document.getElementById('root')
 )

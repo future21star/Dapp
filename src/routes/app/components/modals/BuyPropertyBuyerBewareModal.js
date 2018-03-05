@@ -6,11 +6,10 @@ declare var $;
 class BuyPropertyBuyerBewareModal extends Component {
 	componentWillReceiveProps(nextProps) {
 		if(nextProps.show) {
-			$('#buy_property_buyer_beware_modal').modal();
-			$('#buy_property_buyer_beware_modal').toggleClass('is-visible');
+			$('#buy_property_buyer_beware_modal').modal('show');
 		}
 		else {
-			$('#buy_property_buyer_beware_modal').removeClass('is-visible');
+			$('#buy_property_buyer_beware_modal').modal('hide');
 		}
 	}
 

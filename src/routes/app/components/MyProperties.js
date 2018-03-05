@@ -29,7 +29,6 @@ import TrusteePickModal from './modals/TrusteePickModal';
 class MyProperties extends Component {
   constructor(props) {
     super(props);
-
     this.state = { 
       isOpen1: false, 
       isOpen2: false,
@@ -91,10 +90,16 @@ class MyProperties extends Component {
       // isOpenForBuyPropertyForSaleModal: !this.state.isOpenForBuyPropertyForSaleModal
       // isOpenForBuyPropertyProcessingModal: !this.state.isOpenForBuyPropertyProcessingModal
       // isOpenForCancelSaleModal: !this.state.isOpenForCancelSaleModal
-      isOpenForDissolveTrustConfirmDissolveModal: !this.state.DissolveTrustConfirmDissolveModal
+      isOpenForDissolveTrustConfirmDissolveModal: !this.state.isOpenForDissolveTrustConfirmDissolveModal
     });
   }
 
+  addProperty = () => {
+    this.setState({
+      ...this.sate,
+      isOpenForAddPropertyExplainerModal1: !this.state.isOpenForAddPropertyExplainerModal1
+    })    
+  }
 
   render() {
     return(
@@ -102,7 +107,7 @@ class MyProperties extends Component {
         <div className="prp_content">
           <div className="property_sale">
             <h6>My Properties</h6>
-            <div className="btn_add"><a onClick={this.toggleModal}>Add Property</a></div>
+            <div className="btn_add"><a onClick={this.addProperty}>Add Property</a></div>
           </div>
           <div className="table_responsive">
             <table className="table custom_table">
@@ -153,7 +158,8 @@ class MyProperties extends Component {
             </table>
           </div>
         </div>     
-        <TrusteePickModal show={this.state.isOpenForDissolveTrustConfirmDissolveModal} onClose={this.toggleModal} />
+        <AddPropertyExplainerModal1 show={this.state.isOpenForAddPropertyExplainerModal1} onClose={this.toggleModal} />
+        <DissolveTrustPopDissolveModal show={this.state.isOpenForDissolveTrustConfirmDissolveModal} onClose={this.toggleModal} />
       </div>
     )
 
@@ -161,4 +167,3 @@ class MyProperties extends Component {
 }
 
 export default MyProperties
-

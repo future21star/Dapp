@@ -6,11 +6,10 @@ declare var $;
 class AddPropertyExplainerModal4 extends Component {
 	componentWillReceiveProps(nextProps) {
 		if(nextProps.show) {
-			$('#add_property_explainer_modal_4').modal();
-			$('#add_property_explainer_modal_4').toggleClass('is-visible');
+			$('#add_property_explainer_modal_4').modal('show');
 		}
 		else {
-			$('#add_property_explainer_modal_4').removeClass('is-visible');
+			$('#add_property_explainer_modal_4').modal('hide');
 		}
 	}
 
